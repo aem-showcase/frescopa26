@@ -206,9 +206,13 @@ export default function decorate(block) {
   controls.className = 'taste-profile-controls';
 
   // Animate the radar shape from its current values to the target profile.
+  // Matches the source site: expo easing, a 1.1s outward "bloom" on first
+  // reveal, an 820ms morph between profiles, and an auto-cycle demo that loops
+  // through the profiles until the visitor takes over.
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   let current = AXES.map(() => 0);
   let raf = null;
-  const easeQuint = (t) => 1 - (1 - t) ** 5;
+  const easeExpo = (t) => (t === 1 ? 1 : 1 - 2 ** (-10 * t));
   const render = (vals) => {
     const pts = vals.map((v, i) => {
       const p = pointFor(i, v);
@@ -221,14 +225,18 @@ export default function decorate(block) {
       dot.setAttribute('cy', p.y.toFixed(1));
     });
   };
-  const animateTo = (target) => {
+  const animateTo = (target, dur = 820) => {
     if (raf) cancelAnimationFrame(raf);
+    if (reduceMotion) {
+      current = target.slice();
+      render(current);
+      return;
+    }
     const from = current.slice();
     const start = performance.now();
-    const dur = 620;
     const step = (now) => {
       const t = Math.min(1, (now - start) / dur);
-      const e = easeQuint(t);
+      const e = easeExpo(t);
       current = from.map((v, i) => v + (target[i] - v) * e);
       render(current);
       if (t < 1) raf = requestAnimationFrame(step);
@@ -236,7 +244,7 @@ export default function decorate(block) {
     raf = requestAnimationFrame(step);
   };
 
-  const setActive = (profile, btn) => {
+  const setActive = (profile, btn, dur) => {
     readoutTitle.textContent = profile.title;
     readoutNote.textContent = profile.note;
     controls.querySelectorAll('button').forEach((b) => {
@@ -245,38 +253,68 @@ export default function decorate(block) {
     });
     btn.classList.add('is-active');
     btn.setAttribute('aria-pressed', 'true');
-    animateTo(profile.values);
+    animateTo(profile.values, dur);
   };
 
   let activeIndex = profiles.findIndex((p) => p.active);
   if (activeIndex < 0) activeIndex = 0;
 
-  const buttons = profiles.map((profile) => {
+  // Auto-cycle demo: step through the profiles every 3s, stopping for good the
+  // moment the visitor picks one themselves.
+  let cycleIdx = activeIndex;
+  let cycleTimer = null;
+  const stopCycle = () => {
+    if (cycleTimer) {
+      clearTimeout(cycleTimer);
+      cycleTimer = null;
+    }
+  };
+
+  const buttons = profiles.map((profile, i) => {
     const btn = document.createElement('button');
     btn.type = 'button';
     btn.className = 'taste-profile-btn';
     btn.textContent = profile.label;
     btn.setAttribute('aria-pressed', 'false');
-    btn.addEventListener('click', () => setActive(profile, btn));
+    btn.addEventListener('click', () => {
+      stopCycle();
+      cycleIdx = i;
+      setActive(profile, btn);
+    });
     controls.append(btn);
     return btn;
   });
+
+  const scheduleCycle = () => {
+    if (reduceMotion || profiles.length < 2) return;
+    cycleTimer = setTimeout(() => {
+      cycleIdx = (cycleIdx + 1) % profiles.length;
+      setActive(profiles[cycleIdx], buttons[cycleIdx]);
+      scheduleCycle();
+    }, 3000);
+  };
 
   viz.append(frame, controls);
   block.textContent = '';
   block.append(copy, viz);
 
-  // Set the initial readout without animating; animate outward when scrolled in.
+  // Set the initial readout without animating; bloom outward when scrolled in.
   const initial = profiles[activeIndex];
   readoutTitle.textContent = initial.title;
   readoutNote.textContent = initial.note;
   buttons[activeIndex].classList.add('is-active');
   buttons[activeIndex].setAttribute('aria-pressed', 'true');
 
+  if (reduceMotion) {
+    render(initial.values);
+    return;
+  }
+
   const observer = new IntersectionObserver((entries, obs) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        animateTo(initial.values);
+        animateTo(initial.values, 1100);
+        scheduleCycle();
         obs.disconnect();
       }
     });
