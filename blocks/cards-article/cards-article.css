@@ -1,5 +1,47 @@
 /* Block: cards-article -- responsive grid of article-post cards */
 
+/* Category filter bar -- pill tabs with a rule beneath, matching the source */
+.cards-article-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 0 0 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.cards-article-filter-tab {
+  padding: 0.5rem 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--r-pill);
+  background-color: transparent;
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.2;
+  cursor: pointer;
+  transition:
+    background-color var(--dur-1) var(--ease-quint),
+    border-color var(--dur-1) var(--ease-quint),
+    color var(--dur-1) var(--ease-quint);
+}
+
+.cards-article-filter-tab:hover {
+  border-color: var(--burgundy);
+  color: var(--burgundy);
+}
+
+.cards-article-filter-tab.is-active {
+  border-color: var(--burgundy);
+  background-color: var(--burgundy);
+  color: var(--cream);
+}
+
+.cards-article > ul > li.is-filtered-out {
+  display: none;
+}
+
 .cards-article > ul {
   list-style: none;
   margin: 0;
@@ -40,11 +82,36 @@
   object-fit: cover;
 }
 
+/* Empty image slot: a dashed placeholder with a picture icon and the card
+   title, matching the source's image-slot. */
+.cards-article .cards-article-card-image-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  border: 1px dashed color-mix(in oklch, var(--ink) 22%, transparent);
+  background: var(--paper-2);
+  line-height: 1.3;
+}
+
+.cards-article .cards-article-card-image-icon {
+  width: 34px;
+  height: 34px;
+  color: color-mix(in oklch, var(--ink) 34%, var(--paper-2));
+}
+
+.cards-article .cards-article-card-image-label {
+  font-family: var(--font-body);
+  font-size: var(--fs-sm);
+  color: color-mix(in oklch, var(--ink) 46%, var(--paper-2));
+}
+
 /* Card text stack */
 .cards-article .cards-article-card-body {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.9rem;
   margin: 0;
   padding: 0;
 }
@@ -54,13 +121,13 @@
 }
 
 /* Category label -- uppercase terracotta eyebrow */
-.cards-article .cards-article-card-category {
+.cards-article .cards-article-card-body p.cards-article-card-category {
   order: -1;
   font-family: var(--font-body);
-  font-size: var(--fs-eyebrow);
+  font-size: 0.64rem;
   font-weight: 500;
   line-height: 1.2;
-  letter-spacing: var(--tracking-eyebrow);
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--terracotta);
 }
@@ -69,12 +136,19 @@
 .cards-article .cards-article-card-body h3 {
   margin: 0;
   font-family: var(--font-display);
-  font-size: var(--fs-h4);
+  font-size: 1.25rem;
   font-weight: 700;
-  line-height: var(--lh-snug);
+  line-height: 1.16;
   letter-spacing: var(--tracking-tight);
   color: var(--burgundy);
   transition: color var(--dur-1) var(--ease-quint);
+}
+
+/* A linked title inherits the burgundy heading colour (not the terracotta link
+   default); it warms to terracotta on hover. */
+.cards-article .cards-article-card-body h3 a {
+  color: inherit;
+  text-decoration: none;
 }
 
 /* Description */

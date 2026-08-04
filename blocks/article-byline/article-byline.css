@@ -8,8 +8,8 @@
 
 .article-byline .article-byline-avatar {
   flex: 0 0 auto;
-  width: 44px;
-  height: 44px;
+  width: 46px;
+  height: 46px;
   border-radius: 50%;
   overflow: hidden;
   background-color: var(--paper-3);
@@ -36,13 +36,13 @@
 .article-byline .article-byline-body {
   display: flex;
   flex-direction: column;
-  gap: 0.15rem;
 }
 
 .article-byline .article-byline-name {
   font-family: var(--font-body);
   font-size: var(--fs-sm);
   font-weight: 600;
+  line-height: 1.6;
   color: var(--ink);
 }
 
@@ -51,6 +51,7 @@
   font-family: var(--font-body);
   font-size: 0.66rem;
   font-weight: 400;
+  line-height: 1.6;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--ink-soft);
