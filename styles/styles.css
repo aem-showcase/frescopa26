@@ -514,6 +514,81 @@ main .section.feed .default-content-wrapper > p:last-child {
   color: var(--ink-soft);
 }
 
+/* Catalogue intro (machines / coffee): compact vertical rhythm from the source
+   — a small top (plus the fixed header's height on mobile, where the header
+   overlays) and a small bottom so the sticky filter bar tucks in close beneath.
+   On desktop the header sits in normal flow, so no extra offset is needed. */
+main .section.alt:has(.default-content-wrapper h1) {
+  padding-top: calc(var(--nav-height) + clamp(2.5rem, 1.5rem + 3vw, 4.5rem));
+  padding-bottom: clamp(2rem, 1.5rem + 2vw, 3rem);
+}
+
+@media (width >= 900px) {
+  main .section.alt:has(.default-content-wrapper h1) {
+    padding-top: clamp(2.5rem, 1.5rem + 3vw, 4.5rem);
+  }
+}
+
+/* Breadcrumb ("Home / Machines") above the catalogue heading. */
+main .page-breadcrumb {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+/* stylelint-disable no-descending-specificity */
+main .page-breadcrumb a {
+  color: var(--ink-soft);
+  text-decoration: none;
+  transition: color var(--dur-1) var(--ease-quint);
+}
+
+main .page-breadcrumb a:hover {
+  color: var(--terracotta);
+}
+/* stylelint-enable no-descending-specificity */
+
+main .page-breadcrumb [aria-current='page'] {
+  color: var(--ink);
+}
+
+/* Sticky category filter bar: compact, pinned below the header, on the lighter
+   paper tone (not the darker alt band) with a hairline and a blur. */
+main .section.machine-filter-container {
+  position: sticky;
+  top: var(--nav-height);
+  z-index: 20;
+  padding: 1rem 0;
+  background-color: var(--paper);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(10px);
+}
+
+@media (width >= 900px) {
+  main .section.machine-filter-container {
+    top: 0;
+  }
+}
+
+/* Journal (blog) rhythm: the featured card sits close beneath the intro, so it
+   uses compact vertical padding rather than the full section rhythm. The
+   article grid that follows keeps a small top and a full bottom. Matches source. */
+main .section.cards-featured-container {
+  padding:
+    clamp(2.5rem, 2rem + 2vw, 4rem) 0
+    clamp(1.5rem, 1rem + 2vw, 2.5rem);
+}
+
+main .section.cards-article-container:not(:has(.article-byline)) {
+  padding: clamp(1.5rem, 1rem + 2vw, 2.5rem) 0 var(--section-y);
+}
+
 /* Page-header intro (category + account pages): eyebrow, large burgundy
    heading, lede. */
 main .section.alt .default-content-wrapper > p:first-child,
@@ -531,13 +606,18 @@ main .section:has(.account-signin) .default-content-wrapper > p:first-child {
 main .section.alt .default-content-wrapper > h1,
 main .section:has(.account-signin) .default-content-wrapper > h1 {
   margin: 0.6rem 0 0;
-  max-width: 14ch;
   font-family: var(--font-display);
   font-size: var(--fs-h2);
   font-weight: 800;
   line-height: var(--lh-tight);
   letter-spacing: var(--tracking-tight);
   color: var(--burgundy);
+}
+
+/* The account-page heading keeps a narrow measure; the catalogue intro heading
+   runs full width (one line where it fits), matching the source. */
+main .section:has(.account-signin) .default-content-wrapper > h1 {
+  max-width: 14ch;
 }
 
 /* stylelint-disable no-descending-specificity */
@@ -552,9 +632,10 @@ main .section:has(.account-signin) .default-content-wrapper > h1 + p {
 /* stylelint-enable no-descending-specificity */
 
 /* Product-family head (machines + coffee catalogues): label eyebrow, burgundy
-   heading, description, and an optional smaller note — the default content
-   ahead of each cards-machine / cards-coffee block. */
-main .section:has(.cards-machine) .default-content-wrapper > p:first-child,
+   heading, description, and — for machine bands — a "How they differ" note in a
+   second column. The machine head is restructured into .section-head-copy +
+   .section-head-note (see decorateMachineBandHeads); coffee heads stay flat. */
+main .section:has(.cards-machine) .section-head-copy > p:first-child,
 main .section:has(.cards-coffee) .default-content-wrapper > p:first-child {
   margin: 0;
   font-family: var(--font-body);
@@ -566,7 +647,7 @@ main .section:has(.cards-coffee) .default-content-wrapper > p:first-child {
   color: var(--terracotta);
 }
 
-main .section:has(.cards-machine) .default-content-wrapper > h2,
+main .section:has(.cards-machine) .section-head-copy > h2,
 main .section:has(.cards-coffee) .default-content-wrapper > h2 {
   margin: 0.6rem 0 0;
   font-family: var(--font-display);
@@ -578,7 +659,7 @@ main .section:has(.cards-coffee) .default-content-wrapper > h2 {
 }
 
 /* stylelint-disable no-descending-specificity */
-main .section:has(.cards-machine) .default-content-wrapper > h2 + p,
+main .section:has(.cards-machine) .section-head-copy > h2 + p,
 main .section:has(.cards-coffee) .default-content-wrapper > h2 + p {
   margin: 1rem 0 0;
   max-width: 46ch;
@@ -587,8 +668,7 @@ main .section:has(.cards-coffee) .default-content-wrapper > h2 + p {
   color: var(--ink-soft);
 }
 
-/* A trailing note (e.g. "how they differ") — smaller, muted. */
-main .section:has(.cards-machine) .default-content-wrapper > p:last-child:not(:first-child),
+/* Coffee bands: trailing note (rare) — smaller, muted, inline. */
 main .section:has(.cards-coffee) .default-content-wrapper > p:last-child:not(:first-child) {
   margin: 1rem 0 0;
   max-width: 46ch;
@@ -601,20 +681,184 @@ main .section:has(.cards-machine) .default-content-wrapper,
 main .section:has(.cards-coffee) .default-content-wrapper {
   margin-bottom: 2.5rem;
 }
+
+/* Machine band head: two-column split with a bottom rule. The copy sits left,
+   the "How they differ" note right, matching the source. */
+main .section:has(.cards-machine) .default-content-wrapper.section-head-split {
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid var(--line);
+}
+
+main .section-head-note {
+  padding-left: 1.1rem;
+  border-left: 2px solid var(--amber);
+}
+
+main .section-head-note-label {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+main .section-head-note > p {
+  margin: 0.5rem 0 0;
+  font-size: var(--fs-body);
+  line-height: 1.55;
+  color: var(--ink);
+}
+
+@media (width >= 900px) {
+  main .default-content-wrapper.section-head-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+    align-items: end;
+  }
+}
 /* stylelint-enable no-descending-specificity */
 
 /* ---- Journal article (long-form editorial) ---- */
 
 /* stylelint-disable no-descending-specificity */
 
+/* Article header band: the breadcrumb, title, lede and top byline sit on the
+   alt paper tone, spanning the full viewport width and stopping above the hero
+   image. The section carries no top padding here — the band supplies it. The
+   two-class selector outranks `main > .section > div`, so the band goes
+   edge-to-edge instead of being capped to the content width. */
+main .section:has(.article-header) {
+  padding-top: 0;
+}
+
+main .section > .article-header {
+  max-width: none;
+  margin-bottom: clamp(2rem, 1.5rem + 2vw, 3rem);
+  padding:
+    calc(var(--nav-height) + clamp(2.5rem, 1.5rem + 3vw, 4.5rem)) var(--gutter)
+    clamp(2rem, 1.5rem + 2vw, 3rem);
+  background-color: var(--paper-2);
+}
+
+@media (width >= 900px) {
+  main .section > .article-header {
+    padding-top: clamp(2.5rem, 1.5rem + 3vw, 4.5rem);
+  }
+}
+
+/* The header's inner blocks keep the reading column, centred and aligned with
+   the body prose below. */
+main .article-header .default-content-wrapper,
+main .article-header .article-byline-wrapper {
+  max-width: var(--article-read);
+  margin-inline: auto;
+  padding-inline: 0;
+}
+
+/* Space the top byline away from the lede, matching the source rhythm. */
+main .article-header .article-byline-wrapper {
+  margin-top: 1.8rem;
+}
+
+/* Breadcrumb ("The Journal / The Atelier") above the article title. */
+main .article-breadcrumb {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+main .article-breadcrumb a {
+  color: var(--ink-soft);
+  text-decoration: none;
+  transition: color var(--dur-1) var(--ease-quint);
+}
+
+main .article-breadcrumb a:hover {
+  color: var(--terracotta);
+}
+
+main .article-breadcrumb [aria-current='page'] {
+  color: var(--terracotta);
+}
+
 /* Constrain the reading column and centre it; keep media full-width within.
    The byline and share blocks share the same narrow column so they line up
-   under the header copy (rather than sitting at the section gutter). */
+   under the header copy (rather than sitting at the section gutter). The
+   article reading measure is a touch narrower than --content-narrow, matching
+   the source. */
+main .section:has(.article-byline) {
+  --article-read: 680px;
+}
+
 main .section:has(.article-byline) .default-content-wrapper,
 main .section:has(.article-byline) .article-byline-wrapper,
 main .section:has(.article-byline) .article-share-wrapper {
-  max-width: var(--content-narrow);
+  max-width: var(--article-read);
   margin-inline: auto;
+}
+
+/* The "Keep reading / More from the Journal" heading and the "Back to the
+   Journal" link align with the wider related-posts grid (content width), not
+   the narrow reading column — so they sit flush left with the cards. */
+main .section:has(.article-byline) .default-content-wrapper:has(+ .cards-article-wrapper),
+main .section:has(.article-byline) .cards-article-wrapper ~ .default-content-wrapper {
+  max-width: var(--content);
+}
+
+/* The "Keep reading" eyebrow is terracotta, like the site's other eyebrows. */
+main .section:has(.article-byline)
+  .default-content-wrapper:has(+ .cards-article-wrapper) > p:first-child {
+  color: var(--terracotta);
+}
+
+/* The "More from the Journal" heading is the large burgundy section title; the
+   eyebrow above supplies the gap, so its own top margin is small. */
+main .section:has(.article-byline)
+  .default-content-wrapper:has(+ .cards-article-wrapper) > h2 {
+  margin-top: 0.5rem;
+  font-size: 2.3rem;
+  line-height: 1.15;
+}
+
+/* The related-posts grid clears the heading. */
+main .section:has(.article-byline) .cards-article-wrapper {
+  margin-top: 2rem;
+}
+
+/* "Back to the Journal" renders as a pill button, matching the source. */
+main .section:has(.article-byline) .cards-article-wrapper ~ .default-content-wrapper > p {
+  margin-top: 2rem;
+}
+
+main .section:has(.article-byline) .cards-article-wrapper ~ .default-content-wrapper a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid color-mix(in oklch, var(--ink) 32%, transparent);
+  border-radius: var(--r-pill);
+  font-family: var(--font-body);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  letter-spacing: normal;
+  text-transform: none;
+  color: var(--ink);
+  text-decoration: none;
+  transition:
+    border-color var(--dur-1) var(--ease-quint),
+    color var(--dur-1) var(--ease-quint);
+}
+
+main .section:has(.article-byline) .cards-article-wrapper ~ .default-content-wrapper a:hover {
+  border-color: var(--burgundy);
+  color: var(--burgundy);
 }
 
 main .section:has(.article-byline) .default-content-wrapper > p:first-child {
@@ -648,31 +892,75 @@ main .section:has(.article-byline) .default-content-wrapper > h1 + p {
 
 /* Body prose */
 main .section:has(.article-byline) .default-content-wrapper > h2 {
-  margin: 2.4rem 0 0;
+  margin: 2.4rem 0 0.7rem;
   font-family: var(--font-display);
-  font-size: var(--fs-h3);
+  font-size: 2rem;
   font-weight: 800;
-  line-height: var(--lh-snug);
+  line-height: 1.2;
   letter-spacing: var(--tracking-tight);
   color: var(--burgundy);
 }
 
 main .section:has(.article-byline) .default-content-wrapper > p {
   margin: 1.1rem 0 0;
-  font-size: var(--fs-body-lg);
-  line-height: var(--lh-body);
-  color: var(--ink);
+  font-size: 1.14rem;
+  line-height: 1.75;
+  color: var(--ink-soft);
 }
 
-/* Drop cap on the opening paragraph (the one right after the hero caption). */
+/* The paragraph right after a section heading sits close under it (the heading
+   supplies the gap), matching the source. */
+main .section:has(.article-byline) .default-content-wrapper > h2 + p {
+  margin-top: 0;
+}
+
+/* Figure caption: the small uppercase label directly after a hero/inline image
+   (an em on its own line), matching the source. */
 main .section:has(.article-byline) .default-content-wrapper > p > em:only-child {
-  font-style: italic;
+  display: block;
+  margin-top: 0.7rem;
+  font-family: var(--font-body);
+  font-style: normal;
+  font-size: 0.64rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
   color: var(--ink-soft);
+}
+
+/* The opening paragraph sits well clear of the hero caption, matching the
+   source's breathing room between the image block and the body copy. */
+main .section:has(.article-byline) .default-content-wrapper
+  > p:has(> picture):first-child + p + p {
+  margin-top: 3.4rem;
+}
+
+/* Drop cap on the opening paragraph — the first text paragraph, which follows
+   the hero image and its caption. A large burgundy initial floats into the
+   copy, matching the source. */
+main .section:has(.article-byline) .default-content-wrapper
+  > p:has(> picture):first-child + p + p::first-letter {
+  float: left;
+  margin: 0.02em 0.08em 0 0;
+  font-family: var(--font-display);
+  font-size: 3.6rem;
+  font-weight: 800;
+  line-height: 0.82;
+  color: var(--burgundy);
 }
 
 /* Figures: images render full reading-column width with an italic caption. */
 main .section:has(.article-byline) .default-content-wrapper > p:has(> picture) {
   margin: 2rem 0 0;
+}
+
+/* The hero image (first figure in the article body) breaks out past the reading
+   column to the content width, matching the source. The wrapper is 680px and
+   centred, so a negative inline margin pulls the hero out symmetrically. */
+main .section:has(.article-byline) .default-content-wrapper > p:has(> picture):first-child {
+  width: min(var(--content) - 2 * var(--gutter), 100vw - 2 * var(--gutter));
+  margin-top: 0;
+  margin-inline: calc((100% - min(var(--content) - 2 * var(--gutter), 100vw - 2 * var(--gutter))) / 2);
 }
 
 main .section:has(.article-byline) .default-content-wrapper picture img {
@@ -681,12 +969,8 @@ main .section:has(.article-byline) .default-content-wrapper picture img {
   border-radius: var(--r-lg);
 }
 
-main .section:has(.article-byline) .default-content-wrapper > p:has(> picture) + p em {
-  display: block;
-  margin-top: 0.6rem;
-  font-size: var(--fs-sm);
-  color: var(--ink-soft);
-}
+/* Figure caption: uppercase mono-ish label under the image, matching the
+   source (not italic prose). */
 
 /* Pull-quote */
 main .section:has(.article-byline) .default-content-wrapper > blockquote {

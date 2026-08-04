@@ -53,7 +53,7 @@ export default function decorate(block) {
   const bar = document.createElement('div');
   bar.className = 'machine-filter-bar';
   bar.setAttribute('role', 'group');
-  bar.setAttribute('aria-label', 'Filter machines by type');
+  bar.setAttribute('aria-label', 'Filter by type');
   tabs.forEach((btn) => bar.append(btn));
   block.append(bar);
 

@@ -207,6 +207,129 @@ function decorateScrollReveal(main) {
 }
 
 /**
+ * Adds a "Home / <Page>" breadcrumb to the intro of catalogue pages (those
+ * with a filter bar), mirroring the source site. The current-page label is
+ * derived from the URL so it stays correct across machines / coffee / etc.
+ * @param {Element} main The main element
+ */
+function decorateCatalogueBreadcrumb(main) {
+  // Only catalogue pages (with the filter tab bar) carry a breadcrumb.
+  if (!main.querySelector('.machine-filter')) return;
+  const intro = [...main.querySelectorAll(':scope > .section')]
+    .find((section) => section.querySelector('h1'));
+  const wrapper = intro?.querySelector('.default-content-wrapper');
+  const heading = wrapper?.querySelector('h1');
+  if (!wrapper || !heading) return;
+
+  const homeHref = window.location.pathname.replace(/[^/]+$/, '');
+  const segment = window.location.pathname.replace(/\/$/, '').split('/').pop() || '';
+  const label = segment
+    .split('-')
+    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+    .join(' ');
+
+  const nav = document.createElement('nav');
+  nav.className = 'page-breadcrumb';
+  nav.setAttribute('aria-label', 'Breadcrumb');
+  const home = document.createElement('a');
+  home.href = homeHref;
+  home.textContent = 'Home';
+  const sep = document.createElement('span');
+  sep.setAttribute('aria-hidden', 'true');
+  sep.textContent = '/';
+  const current = document.createElement('span');
+  current.setAttribute('aria-current', 'page');
+  current.textContent = label;
+  nav.append(home, sep, current);
+  wrapper.prepend(nav);
+}
+
+/**
+ * Restructures the machine-catalogue band heads into the source's two-column
+ * layout: the eyebrow / heading / lede on the left, and a "How they differ"
+ * note (the trailing paragraph) on the right with a labelled amber rule.
+ * @param {Element} main The main element
+ */
+function decorateMachineBandHeads(main) {
+  main.querySelectorAll(':scope > .section:has(.cards-machine) > .default-content-wrapper')
+    .forEach((wrapper) => {
+      const kids = [...wrapper.children];
+      const heading = kids.find((el) => el.tagName === 'H2');
+      const paragraphs = kids.filter((el) => el.tagName === 'P');
+      // The last paragraph is the "how they differ" note — only split it out
+      // when there's a heading and more than one paragraph (eyebrow + lede + note).
+      if (!heading || paragraphs.length < 2) return;
+      const note = paragraphs[paragraphs.length - 1];
+
+      const left = document.createElement('div');
+      left.className = 'section-head-copy';
+      const right = document.createElement('div');
+      right.className = 'section-head-note';
+      const label = document.createElement('span');
+      label.className = 'section-head-note-label';
+      label.textContent = 'How they differ';
+      right.append(label, note);
+      kids.filter((el) => el !== note).forEach((el) => left.append(el));
+
+      wrapper.classList.add('section-head-split');
+      wrapper.append(left, right);
+    });
+}
+
+/**
+ * Decorates the Journal article header. Turns the flattened breadcrumb
+ * ("The Journal / The Atelier") into styled crumbs (a muted "The Journal" link
+ * back to the listing + a terracotta current category) and groups the header
+ * copy with the top byline into a banded header, matching the source where the
+ * intro sits on the alt paper tone above the hero image.
+ * @param {Element} main The main element
+ */
+function decorateArticleHeader(main) {
+  const section = main.querySelector(':scope > .section:has(.article-byline)');
+  if (!section) return;
+  const copy = section.querySelector(':scope > .default-content-wrapper');
+  const crumb = copy?.querySelector(':scope > p:first-child');
+  if (!crumb || !crumb.textContent.includes('/')) return;
+
+  // Rebuild the breadcrumb: first segment links to the Journal listing, the
+  // last is the current category (terracotta, no link).
+  const parts = crumb.textContent.split('/').map((s) => s.trim()).filter(Boolean);
+  const nav = document.createElement('nav');
+  nav.className = 'article-breadcrumb';
+  nav.setAttribute('aria-label', 'Breadcrumb');
+  const blogHref = window.location.pathname.replace(/[^/]+$/, 'blog');
+  parts.forEach((part, i) => {
+    if (i > 0) {
+      const sep = document.createElement('span');
+      sep.setAttribute('aria-hidden', 'true');
+      sep.textContent = '/';
+      nav.append(sep);
+    }
+    if (i === 0) {
+      const a = document.createElement('a');
+      a.href = blogHref;
+      a.textContent = part;
+      nav.append(a);
+    } else {
+      const span = document.createElement('span');
+      if (i === parts.length - 1) span.setAttribute('aria-current', 'page');
+      span.textContent = part;
+      nav.append(span);
+    }
+  });
+  crumb.replaceWith(nav);
+
+  // Group the header copy + top byline into a banded header so the alt tone can
+  // span both and stop above the hero image.
+  const topByline = section.querySelector(':scope > .article-byline-wrapper');
+  const header = document.createElement('div');
+  header.className = 'article-header';
+  section.insertBefore(header, copy);
+  header.append(copy);
+  if (topByline) header.append(topByline);
+}
+
+/**
  * Decorates the main element.
  * @param {Element} main The main element
  */
@@ -218,6 +341,9 @@ export function decorateMain(main) {
   decorateSectionMetadata(main);
   decorateBlocks(main);
   decorateButtons(main);
+  decorateCatalogueBreadcrumb(main);
+  decorateMachineBandHeads(main);
+  decorateArticleHeader(main);
 }
 
 /**

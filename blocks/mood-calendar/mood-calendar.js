@@ -94,12 +94,28 @@ export default function decorate(block) {
   brewNote.className = 'mood-calendar-note';
   brew.append(brewTag, brewTitle, brewNote);
 
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
   const setActive = (info, btn) => {
     brewTag.textContent = info.tag;
     brewTitle.textContent = info.title;
     brewNote.textContent = info.note;
-    grid.querySelectorAll('button').forEach((b) => b.classList.remove('is-active'));
+    grid.querySelectorAll('button').forEach((b) => {
+      b.classList.remove('is-active');
+      b.setAttribute('aria-pressed', 'false');
+    });
     btn.classList.add('is-active');
+    btn.setAttribute('aria-pressed', 'true');
+  };
+
+  // Auto-cycle demo: step through the selectable days every 3s, stopping for
+  // good the moment the visitor picks a day themselves (mirrors the source).
+  let cycleTimer = null;
+  const stopCycle = () => {
+    if (cycleTimer) {
+      clearTimeout(cycleTimer);
+      cycleTimer = null;
+    }
   };
 
   // Build a contiguous run of day numbers so authored days sit in a real week,
@@ -118,7 +134,10 @@ export default function decorate(block) {
         btn.type = 'button';
         btn.className = 'mood-calendar-day';
         btn.textContent = info.day;
-        btn.addEventListener('click', () => setActive(info, btn));
+        btn.addEventListener('click', () => {
+          stopCycle();
+          setActive(info, btn);
+        });
         grid.append(btn);
         buttons.set(n, { info, btn });
       } else {
@@ -135,7 +154,10 @@ export default function decorate(block) {
       btn.type = 'button';
       btn.className = 'mood-calendar-day';
       btn.textContent = info.day;
-      btn.addEventListener('click', () => setActive(info, btn));
+      btn.addEventListener('click', () => {
+        stopCycle();
+        setActive(info, btn);
+      });
       grid.append(btn);
       buttons.set(info.day, { info, btn });
     });
@@ -155,4 +177,28 @@ export default function decorate(block) {
 
   block.textContent = '';
   block.append(copy, panel);
+
+  // Kick off the auto-cycle when the calendar scrolls into view; it advances
+  // through the selectable days in order until the visitor takes over.
+  const cycle = [...buttons.values()];
+  if (!reduceMotion && cycle.length > 1) {
+    let cycleIdx = cycle.findIndex(({ btn }) => btn.classList.contains('is-active'));
+    if (cycleIdx < 0) cycleIdx = 0;
+    const scheduleCycle = () => {
+      cycleTimer = setTimeout(() => {
+        cycleIdx = (cycleIdx + 1) % cycle.length;
+        setActive(cycle[cycleIdx].info, cycle[cycleIdx].btn);
+        scheduleCycle();
+      }, 3000);
+    };
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          scheduleCycle();
+          obs.disconnect();
+        }
+      });
+    }, { threshold: 0.35 });
+    observer.observe(block);
+  }
 }
