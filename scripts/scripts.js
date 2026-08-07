@@ -423,13 +423,14 @@ function loadDelayed() {
   // load anything that can be postponed to the latest here
 }
 
-async function loadPage() {
+export async function loadPage() {
   await loadEager(document);
   await loadLazy(document);
   loadDelayed();
 }
 
 loadPage();
+
 (() => {
   const hasQE = new URL(window.location.href).searchParams.has('quick-edit');
   // eslint-disable-next-line import/no-cycle
