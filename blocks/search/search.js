@@ -100,6 +100,7 @@ function onKeydown(e) {
 function close() {
   if (!overlay || !overlay.classList.contains('is-open')) return;
   overlay.classList.remove('is-open');
+  overlay.inert = true;
   document.body.style.overflow = '';
   document.removeEventListener('keydown', onKeydown);
   const restore = lastFocused;
@@ -127,7 +128,7 @@ function trendingItem(item) {
   const a = document.createElement('a');
   a.className = 'search-trending-item';
   a.href = item.href;
-  const picture = createOptimizedPicture(item.img, item.name, false, [{ width: '160' }]);
+  const picture = createOptimizedPicture(item.img, '', false, [{ width: '160' }]);
   picture.classList.add('search-trending-thumb');
   const img = picture.querySelector('img');
   if (img) {
@@ -188,7 +189,7 @@ function buildOverlay() {
       </div>
       <div class="search-body">
         <div class="search-default"></div>
-        <div class="search-results" hidden></div>
+        <div class="search-results" role="status" aria-live="polite" hidden></div>
       </div>
     </div>`;
 
@@ -227,6 +228,7 @@ function open(trigger) {
     overlay.offsetHeight;
   }
   overlay.classList.add('is-open');
+  overlay.inert = false;
   document.body.style.overflow = 'hidden';
   document.addEventListener('keydown', onKeydown);
   input.value = '';
