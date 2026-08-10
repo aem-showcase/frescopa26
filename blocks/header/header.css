@@ -384,7 +384,7 @@ body:has(main > .section:first-child .hero-media.block) header .nav-wrapper {
    (cream text + cream divider line, amber bean) so it reads on the dark image. */
 body:has(main > .section:first-child .hero-media.block) header nav .nav-brand a {
   display: block;
-  width: 158px;
+  width: 128px;
   height: 32px;
   background: url("/icons/frescopa-logo-light.svg") left center / contain no-repeat;
 }
