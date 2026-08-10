@@ -1,6 +1,24 @@
-import { loadCSS } from '../../scripts/aem.js';
+import { loadCSS, createOptimizedPicture } from '../../scripts/aem.js';
 
 const SEARCH_ICON = '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.2-3.2" stroke-linecap="round"></path></svg>';
+const CLOCK_ICON = '<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="8"></circle><path d="M12 8v4l2.5 1.5" stroke-linecap="round"></path></svg>';
+
+const RECENT = ['atelier mini', 'cold brew beans', 'nearest café'];
+const POPULAR = ['bean subscription', 'flavour dna', 'espresso blend', 'gift sets'];
+const TRENDING = [
+  {
+    name: 'The Atelier',
+    price: '$2,199',
+    href: '/machines/atelier',
+    img: '/media_1a775c161149ea61e50ce787b6c0adb646148c6ca.jpg',
+  },
+  {
+    name: 'Morning Blend coffee',
+    price: 'from $10',
+    href: '/beverages/coffee',
+    img: '/media_126153dedaaab1e3fdd811716e201bae4bcfcf30f.jpg',
+  },
+];
 
 let overlay;
 let modal;
@@ -65,6 +83,65 @@ function close() {
   if (restore && typeof restore.focus === 'function') restore.focus();
 }
 
+function chip(text, withClock) {
+  const btn = document.createElement('button');
+  btn.type = 'button';
+  btn.className = 'search-chip';
+  btn.dataset.query = text;
+  btn.innerHTML = `${withClock ? `<span class="search-chip-icon">${CLOCK_ICON}</span>` : ''}<span>${text}</span>`;
+  return btn;
+}
+
+function trendingItem(item) {
+  const a = document.createElement('a');
+  a.className = 'search-trending-item';
+  a.href = item.href;
+  const picture = createOptimizedPicture(item.img, item.name, false, [{ width: '160' }]);
+  picture.classList.add('search-trending-thumb');
+  const img = picture.querySelector('img');
+  if (img) {
+    img.width = 56;
+    img.height = 56;
+    img.addEventListener('error', () => { picture.classList.add('is-empty'); });
+  }
+  a.append(picture);
+  a.insertAdjacentHTML('beforeend', `
+    <span class="search-trending-name">${item.name}</span>
+    <span class="search-trending-price">${item.price}</span>`);
+  return a;
+}
+
+function group(title) {
+  const section = document.createElement('section');
+  section.className = 'search-group';
+  section.innerHTML = `<p class="search-group-title">${title}</p>`;
+  return section;
+}
+
+function renderDefault() {
+  defaultPanel.textContent = '';
+
+  const recent = group('Recent');
+  const recentChips = document.createElement('div');
+  recentChips.className = 'search-chips';
+  RECENT.forEach((t) => recentChips.append(chip(t, true)));
+  recent.append(recentChips);
+
+  const popular = group('Popular searches');
+  const popularChips = document.createElement('div');
+  popularChips.className = 'search-chips';
+  POPULAR.forEach((t) => popularChips.append(chip(t, false)));
+  popular.append(popularChips);
+
+  const trending = group('Trending now');
+  const trendingList = document.createElement('div');
+  trendingList.className = 'search-trending';
+  TRENDING.forEach((item) => trendingList.append(trendingItem(item)));
+  trending.append(trendingList);
+
+  defaultPanel.append(recent, popular, trending);
+}
+
 function buildOverlay() {
   overlay = document.createElement('div');
   overlay.className = 'search-overlay';
@@ -88,6 +165,8 @@ function buildOverlay() {
   input = overlay.querySelector('.search-input');
   defaultPanel = overlay.querySelector('.search-default');
   resultsPanel = overlay.querySelector('.search-results');
+
+  renderDefault();
 
   input.addEventListener('input', render);
   overlay.querySelector('.search-esc').addEventListener('click', close);
