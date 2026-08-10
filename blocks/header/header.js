@@ -139,6 +139,23 @@ export default async function decorate(block) {
 
   const navSections = nav.querySelector('.nav-sections');
   if (navSections) {
+    // mark the nav link for the current site section. Choose the link whose
+    // path is the longest match for the current page so a deep page like
+    // /machines/atelier highlights "The Atelier" rather than "Machines".
+    const currentPath = window.location.pathname.replace(/\/+$/, '') || '/';
+    let currentLink = null;
+    let currentLen = -1;
+    navSections.querySelectorAll('a[href]').forEach((link) => {
+      const linkPath = new URL(link.href, window.location).pathname.replace(/\/+$/, '') || '/';
+      const isMatch = linkPath === currentPath
+        || (linkPath !== '/' && currentPath.startsWith(`${linkPath}/`));
+      if (isMatch && linkPath.length > currentLen) {
+        currentLen = linkPath.length;
+        currentLink = link;
+      }
+    });
+    if (currentLink) currentLink.setAttribute('aria-current', 'page');
+
     navSections.querySelectorAll(':scope .default-content-wrapper > ul > li').forEach((navSection) => {
       if (navSection.querySelector('ul')) navSection.classList.add('nav-drop');
       navSection.addEventListener('click', () => {
