@@ -20,6 +20,15 @@ const TRENDING = [
   },
 ];
 
+const RESULTS = [
+  {
+    match: (q) => q.includes('coffee'),
+    label: 'Coffee',
+    sub: 'in Beverages',
+    href: '/beverages/coffee',
+  },
+];
+
 let overlay;
 let modal;
 let input;
@@ -28,12 +37,34 @@ let resultsPanel;
 let lastFocused;
 let hideTimer;
 
-// Placeholder render; real logic added in Task 3.
+function resultRow({ label, sub, href }) {
+  const a = document.createElement('a');
+  a.className = 'search-result';
+  a.href = href;
+  a.innerHTML = `<span class="search-result-label">${label}</span><span class="search-result-sub">${sub}</span>`;
+  return a;
+}
+
+function renderResults(query) {
+  resultsPanel.textContent = '';
+  const q = query.toLowerCase();
+  const matches = RESULTS.filter((r) => r.match(q));
+  if (matches.length === 0) {
+    const empty = document.createElement('p');
+    empty.className = 'search-empty';
+    empty.textContent = `No results for “${query}”`;
+    resultsPanel.append(empty);
+    return;
+  }
+  matches.forEach((m) => resultsPanel.append(resultRow(m)));
+}
+
 function render() {
-  if (!input) return;
-  const hasQuery = input.value.trim().length > 0;
+  const query = input.value.trim();
+  const hasQuery = query.length > 0;
   defaultPanel.hidden = hasQuery;
   resultsPanel.hidden = !hasQuery;
+  if (hasQuery) renderResults(query);
 }
 
 function getFocusable() {
@@ -169,6 +200,13 @@ function buildOverlay() {
   renderDefault();
 
   input.addEventListener('input', render);
+  defaultPanel.addEventListener('click', (e) => {
+    const c = e.target.closest('.search-chip');
+    if (!c) return;
+    input.value = c.dataset.query;
+    render();
+    input.focus();
+  });
   overlay.querySelector('.search-esc').addEventListener('click', close);
   overlay.addEventListener('mousedown', (e) => {
     if (e.target === overlay) close();
