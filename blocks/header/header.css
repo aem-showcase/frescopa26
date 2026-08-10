@@ -149,7 +149,19 @@ header .nav-brand {
   line-height: 1;
 }
 
+/* Render the logo as a block-level image inside a block link with no line
+   height. A default inline link sits on the text baseline, leaving descender
+   slack below it, so the image rides high inside its centered flex item — the
+   logo, nav links, and tool icons then land on three different vertical
+   centers. Block + line-height:0 collapses that slack so the artwork box is
+   exactly its own height and the logo centers with everything else. */
+header nav .nav-brand a {
+  display: block;
+  line-height: 0;
+}
+
 header nav .nav-brand img {
+  display: block;
   width: auto;
   height: 32px;
 }
@@ -320,6 +332,17 @@ header nav .nav-tools ul {
   margin: 0;
   padding: 0;
   list-style: none;
+  line-height: 0;
+}
+
+/* Center the icon inside each list item rather than letting it ride the text
+   baseline, so the tool icons share the same vertical center as the logo and
+   nav links. */
+/* stylelint-disable-next-line no-descending-specificity */
+header nav .nav-tools li {
+  display: flex;
+  align-items: center;
+  line-height: 0;
 }
 
 header nav .nav-tools a:any-link {
@@ -360,8 +383,8 @@ body:has(main > .section:first-child .hero-media.block) header .nav-wrapper {
 /* Over the hero photo, swap the burgundy wordmark for the light variant
    (cream text + cream divider line, amber bean) so it reads on the dark image. */
 body:has(main > .section:first-child .hero-media.block) header nav .nav-brand a {
-  display: inline-block;
-  width: 158px;
+  display: block;
+  width: 128px;
   height: 32px;
   background: url("/icons/frescopa-logo-light.svg") left center / contain no-repeat;
 }
