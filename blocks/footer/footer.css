@@ -23,14 +23,14 @@ footer .footer p {
    needs the light variant (cream text + divider, amber bean). Swap it in as a
    background on the logo's paragraph and hide the colored <img>. */
 footer .footer .footer-brand .default-content-wrapper > p:first-child:has(picture) {
-  width: 147px;
-  height: 30px;
+  width: 196px;
+  height: 40px;
   background: url("/icons/frescopa-logo-light.svg") left center / contain no-repeat;
 }
 
 footer .footer .footer-brand img {
   width: auto;
-  height: 30px;
+  height: 40px;
   opacity: 0;
 }
 

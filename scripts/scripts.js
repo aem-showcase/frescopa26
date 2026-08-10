@@ -391,7 +391,7 @@ async function loadLazy(doc) {
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
   loadFonts();
 
-    const loadQuickEdit = async (...args) => {
+  const loadQuickEdit = async (...args) => {
     // eslint-disable-next-line import/no-cycle
     const { default: initQuickEdit } = await import('../tools/quick-edit/quick-edit.js');
     initQuickEdit(...args);
