@@ -8,6 +8,7 @@ let input;
 let defaultPanel;
 let resultsPanel;
 let lastFocused;
+let hideTimer;
 
 // Placeholder render; real logic added in Task 3.
 function render() {
@@ -56,9 +57,14 @@ function close() {
   const onEnd = () => {
     overlay.hidden = true;
     overlay.removeEventListener('transitionend', onEnd);
+    clearTimeout(hideTimer);
   };
   overlay.addEventListener('transitionend', onEnd);
-  // Fallback if transitions are disabled (reduced motion / no transition).
+  // transitionend is not reliable (throttled/backgrounded tabs, interrupted
+  // transitions), so a timeout guarantees teardown regardless. --dur-2 is the
+  // longest transition (0.6s); 650ms covers it with margin.
+  hideTimer = setTimeout(onEnd, 650);
+  // Fallback if transitions are disabled (reduced motion / no transition): hide immediately.
   if (getComputedStyle(overlay).transitionDuration === '0s') onEnd();
   if (restore && typeof restore.focus === 'function') restore.focus();
 }
@@ -98,6 +104,9 @@ function buildOverlay() {
 
 function open(trigger) {
   lastFocused = trigger || document.activeElement;
+  // Cancel a pending hide from a prior close() so a rapid re-open doesn't get
+  // hidden out from under the user.
+  clearTimeout(hideTimer);
   if (overlay.hidden) {
     overlay.hidden = false;
     // Force reflow so the transition runs from the hidden state.
