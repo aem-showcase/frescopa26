@@ -54,18 +54,14 @@ function close() {
   document.body.style.overflow = '';
   document.removeEventListener('keydown', onKeydown);
   const restore = lastFocused;
-  const onEnd = () => {
+  // transitionend is unreliable (doesn't fire when throttled/backgrounded) and,
+  // since it bubbles, fires on whichever transition ends first rather than the
+  // longest one — so teardown relies solely on a timeout covering --dur-2
+  // (the longest transition, 0.6s), with margin.
+  clearTimeout(hideTimer);
+  hideTimer = setTimeout(() => {
     overlay.hidden = true;
-    overlay.removeEventListener('transitionend', onEnd);
-    clearTimeout(hideTimer);
-  };
-  overlay.addEventListener('transitionend', onEnd);
-  // transitionend is not reliable (throttled/backgrounded tabs, interrupted
-  // transitions), so a timeout guarantees teardown regardless. --dur-2 is the
-  // longest transition (0.6s); 650ms covers it with margin.
-  hideTimer = setTimeout(onEnd, 650);
-  // Fallback if transitions are disabled (reduced motion / no transition): hide immediately.
-  if (getComputedStyle(overlay).transitionDuration === '0s') onEnd();
+  }, 650);
   if (restore && typeof restore.focus === 'function') restore.focus();
 }
 
