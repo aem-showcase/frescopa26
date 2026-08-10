@@ -185,6 +185,19 @@ export default async function decorate(block) {
       if (!icon) return;
       link.setAttribute('aria-label', label);
       link.innerHTML = `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">${icon}</svg>`;
+      if (key === 'search') {
+        link.setAttribute('aria-haspopup', 'dialog');
+        link.addEventListener('click', async (e) => {
+          e.preventDefault();
+          try {
+            const { default: openSearch } = await import('../search/search.js');
+            openSearch(link);
+          } catch {
+            // If the search module fails to load, fall back to navigating the link.
+            window.location.assign(link.href);
+          }
+        });
+      }
     });
   }
 
