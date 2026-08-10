@@ -12,6 +12,10 @@
   transition: opacity var(--dur-1) var(--ease-quint), backdrop-filter var(--dur-1) var(--ease-quint);
 }
 
+.search-overlay[hidden] {
+  display: none;
+}
+
 .search-overlay.is-open {
   opacity: 1;
   pointer-events: auto;
