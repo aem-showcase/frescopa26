@@ -149,7 +149,20 @@ header .nav-brand {
   line-height: 1;
 }
 
+/* Render the logo as a block-level image inside an inline-block link so its
+   box height equals the artwork height exactly. A default inline image sits on
+   the text baseline, so its vertical position depends on the surrounding
+   line-box metrics — which shift once the display font loads and differ from
+   the transparent hero-overlay header (where the brand link is already forced
+   to inline-block). Pinning the display keeps the logo in the same place on
+   every page. */
+header nav .nav-brand a {
+  display: inline-block;
+  line-height: 0;
+}
+
 header nav .nav-brand img {
+  display: block;
   width: auto;
   height: 32px;
 }
