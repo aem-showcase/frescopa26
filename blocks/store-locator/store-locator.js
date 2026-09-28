@@ -15,9 +15,9 @@ import { loadCSS, loadScript } from '../../scripts/aem.js';
  * its authored address (results are cached) and flies the map to it.
  */
 
-const LEAFLET_VERSION = '1.9.4';
-const LEAFLET_CSS = `https://unpkg.com/leaflet@${LEAFLET_VERSION}/dist/leaflet.css`;
-const LEAFLET_JS = `https://unpkg.com/leaflet@${LEAFLET_VERSION}/dist/leaflet.js`;
+const CODE_BASE = (window.hlx && window.hlx.codeBasePath) || '';
+const LEAFLET_CSS = `${CODE_BASE}/blocks/store-locator/vendor/leaflet.css`;
+const LEAFLET_JS = `${CODE_BASE}/blocks/store-locator/vendor/leaflet.js`;
 const NOMINATIM = 'https://nominatim.openstreetmap.org/search';
 const GEOCODE_INTERVAL = 1100; // ms between geocode requests (usage policy)
 const CACHE_KEY = 'store-locator-geocode-v1';
