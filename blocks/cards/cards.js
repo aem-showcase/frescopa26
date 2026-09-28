@@ -14,7 +14,9 @@ export default function decorate(block) {
     const image = li.querySelector('.cards-card-image');
     const body = li.querySelector('.cards-card-body');
     const category = body?.querySelector('p');
-    if (category && image) {
+    const content = body ? [...body.querySelectorAll('p, h3')] : [];
+    const headingIndex = content.findIndex((element) => element.tagName === 'H3');
+    if (category && image && headingIndex > content.indexOf(category)) {
       const badge = document.createElement('span');
       badge.className = 'cards-cat';
       badge.textContent = category.textContent.trim();
