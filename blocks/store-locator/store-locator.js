@@ -247,6 +247,26 @@ export default async function decorate(block) {
     maxZoom: 19,
   }).addTo(map);
 
+  // The map panel resolves its final size after Leaflet initializes (sticky +
+  // aspect-ratio layout), so tell Leaflet to recompute once the container is
+  // sized. Without this only a single tile strip renders on first load.
+  const invalidate = () => map.invalidateSize(false);
+  requestAnimationFrame(invalidate);
+  [100, 300, 600].forEach((ms) => { setTimeout(invalidate, ms); });
+  if (typeof ResizeObserver !== 'undefined') {
+    let lastW = mapCanvas.offsetWidth;
+    let lastH = mapCanvas.offsetHeight;
+    const ro = new ResizeObserver(() => {
+      const w = mapCanvas.offsetWidth;
+      const h = mapCanvas.offsetHeight;
+      if (w === lastW && h === lastH) return;
+      lastW = w;
+      lastH = h;
+      invalidate();
+    });
+    ro.observe(mapCanvas);
+  }
+
   const pinIcon = L.divIcon({
     className: 'store-locator-pin',
     html: '<span class="store-locator-pin-dot"></span>',
