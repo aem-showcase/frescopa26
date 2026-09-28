@@ -42,19 +42,6 @@ const SAMPLE_DATA = [
     tour_available: true,
     directions_url: 'https://www.google.com/maps/dir/?api=1&destination=720+E+3rd+St+Los+Angeles+CA+90013',
   },
-    {
-    name: 'Fréscopa Sydney',
-    location_type: 'Showroom café',
-    address: '201 Sussex Street',
-    city: 'Sydney',
-    state: 'NSW',
-    hours: 'See location page for hours',
-    amenities: ['Café / taste bar', 'Showroom', 'Workshops', 'Atelier tours'],
-    latitude: -33.8688,
-    longitude: 151.2093,
-    tour_available: true,
-    directions_url: 'https://www.google.com/maps/dir/?api=1&destination=201+Sussex+Street+Sydney+NSW+2000',
-  },
 ];
 
 const ACCENT = '#ba6945';
