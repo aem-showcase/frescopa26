@@ -80,56 +80,6 @@
   line-height: var(--lh-body);
 }
 
-/* Footer (price + CTA) -- published DOM, built by the block JS. */
-.cards .cards-card-foot {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.5rem;
-  margin-top: 0.7rem;
-  padding-top: 0.9rem;
-  border-top: 1px solid var(--line);
-}
-
-/* Fallback for the editor DOM. The block JS builds the footer as a <div> so
-   ProseMirror leaves it intact; but if a footer paragraph is ever left as an
-   editable <p>, it renders as the last .prosemirror-editor wrapper here -- keep
-   at least the footer separator so it still reads as a footer. */
-.cards .cards-card-body .prosemirror-editor:last-child {
-  margin-top: 0.7rem;
-  padding-top: 0.9rem;
-  border-top: 1px solid var(--line);
-}
-
-.cards .cards-price {
-  font-family: var(--font-display);
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--ink);
-}
-
-.cards .cards-cta:any-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.375rem;
-  padding: 0;
-  border: 0;
-  background: none;
-  color: var(--terracotta);
-  font-family: var(--font-body);
-  font-size: 0.85rem;
-  font-weight: 600;
-  text-decoration: none;
-  cursor: pointer;
-  transition: color var(--dur-1) var(--ease-quint);
-}
-
-.cards .cards-cta:any-link:hover {
-  color: var(--terracotta-deep);
-  text-decoration: none;
-}
-
 /* Tablet: 2-up */
 @media (width >= 600px) {
   .cards > ul {
