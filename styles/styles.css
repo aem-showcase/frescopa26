@@ -96,7 +96,10 @@ h1 {
   color: var(--ink);
 }
 
-h2 { font-size: var(--heading-font-size-xl); }
+h2 { 
+  font-size: var(--heading-font-size-xl);
+  margin-top: 0; 
+}
 h3 { font-size: var(--heading-font-size-l); }
 h4 { font-size: var(--heading-font-size-m); }
 h5 { font-size: var(--heading-font-size-s); }
@@ -390,15 +393,19 @@ main .section.dark a.button:any-link {
 
 /* Dark CTA band: centered promise + sub-line + two pill buttons.
    Values extracted from the source .cta section. */
+/* stylelint-disable no-descending-specificity */
 main .section.dark .default-content-wrapper {
   position: relative;
-  max-width: var(--content-narrow);
+  max-width: var(--content);
   margin-inline: auto;
   padding: 0 var(--gutter);
   text-align: center;
 }
 
-main .section.dark .default-content-wrapper > p:first-child {
+main .section.dark .default-content-wrapper p:not(
+  .default-content-wrapper :is(p, :has(p)) ~ p,
+  .default-content-wrapper :is(p, :has(p)) ~ * p
+) {
   margin: 0 auto;
   max-width: 20ch;
   font-family: var(--font-display);
@@ -409,13 +416,17 @@ main .section.dark .default-content-wrapper > p:first-child {
   color: var(--cream);
 }
 
-main .section.dark .default-content-wrapper > p:first-child em {
+main .section.dark .default-content-wrapper p:not(
+  .default-content-wrapper :is(p, :has(p)) ~ p,
+  .default-content-wrapper :is(p, :has(p)) ~ * p
+) em {
   font-style: normal;
   font-weight: 800;
   color: var(--amber);
 }
 
-main .section.dark .default-content-wrapper > p:nth-child(2) {
+main .section.dark .default-content-wrapper :is(p, :has(p)) ~ p:not(:has(a)),
+main .section.dark .default-content-wrapper :is(p, :has(p)) ~ * p:not(:has(a)) {
   margin: 1.4rem auto 0;
   max-width: 34ch;
   font-family: var(--font-body);
@@ -424,7 +435,7 @@ main .section.dark .default-content-wrapper > p:nth-child(2) {
   color: var(--cream-soft);
 }
 
-main .section.dark .default-content-wrapper > p:last-child {
+main .section.dark .default-content-wrapper p:has(a) {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -432,7 +443,7 @@ main .section.dark .default-content-wrapper > p:last-child {
   margin: 2.3rem 0 0;
 }
 
-main .section.dark .default-content-wrapper > p:last-child a {
+main .section.dark .default-content-wrapper p:has(a) a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -453,23 +464,24 @@ main .section.dark .default-content-wrapper > p:last-child a {
     color var(--dur-1) var(--ease-quint);
 }
 
-main .section.dark .default-content-wrapper > p:last-child a:hover {
+main .section.dark .default-content-wrapper p:has(a) a:hover {
   border-color: var(--terracotta-deep);
   background-color: var(--terracotta-deep);
   color: var(--cream);
 }
 
-main .section.dark .default-content-wrapper > p:last-child a:last-child {
+main .section.dark .default-content-wrapper p:has(a) a:last-child {
   border-color: oklch(94.5% 0.016 80deg / 34%);
   background-color: transparent;
   color: var(--cream);
 }
 
-main .section.dark .default-content-wrapper > p:last-child a:last-child:hover {
+main .section.dark .default-content-wrapper p:has(a) a:last-child:hover {
   border-color: var(--cream);
   background-color: oklch(94.5% 0.016 80deg / 12%);
   color: var(--cream);
 }
+/* stylelint-enable no-descending-specificity */
 
 /* Feed section head: eyebrow (terracotta rule), heading, and an intro
    paragraph laid out to match the source. */
@@ -477,10 +489,11 @@ main .section.feed .default-content-wrapper {
   margin-bottom: 3.2rem;
 }
 
-main .section.feed .default-content-wrapper > p:first-child {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
+/* stylelint-disable-next-line no-descending-specificity */
+main .section.feed .default-content-wrapper > p:first-child,
+main .section.feed .default-content-wrapper :where(
+  .prosemirror-editor:first-child p:first-child
+) {
   margin: 0;
   font-family: var(--font-body);
   font-size: var(--fs-eyebrow);
@@ -491,14 +504,8 @@ main .section.feed .default-content-wrapper > p:first-child {
   color: var(--terracotta);
 }
 
-main .section.feed .default-content-wrapper > p:first-child::before {
-  content: "";
-  width: 1.75rem;
-  height: 1px;
-  background-color: currentcolor;
-}
-
-main .section.feed .default-content-wrapper > h2 {
+main .section.feed .default-content-wrapper > h2,
+main .section.feed .default-content-wrapper :where(.prosemirror-editor h2) {
   margin: 1rem 0 0;
   font-size: var(--fs-h2);
   font-weight: 800;
@@ -507,7 +514,11 @@ main .section.feed .default-content-wrapper > h2 {
   color: var(--burgundy);
 }
 
-main .section.feed .default-content-wrapper > p:last-child {
+/* stylelint-disable-next-line no-descending-specificity */
+main .section.feed .default-content-wrapper > p:last-child,
+main .section.feed .default-content-wrapper :where(
+  .prosemirror-editor:last-child p:last-child
+) {
   margin: 1.2rem 0 0;
   font-size: var(--fs-body-lg);
   line-height: var(--lh-body);
@@ -590,8 +601,11 @@ main .section.cards-article-container:not(:has(.article-byline)) {
 }
 
 /* Page-header intro (category + account pages): eyebrow, large burgundy
-   heading, lede. */
-main .section.alt .default-content-wrapper > p:first-child,
+   heading, lede. Scoped to the section's leading content wrapper only, so a
+   trailing default-content-wrapper added after a block (e.g. a note under
+   steps-tabs) isn't mistaken for the page header. */
+main .section.alt > .default-content-wrapper:first-child > p:first-child,
+/* stylelint-disable-next-line no-descending-specificity */
 main .section:has(.account-signin) .default-content-wrapper > p:first-child {
   margin: 0;
   font-family: var(--font-body);
@@ -603,7 +617,8 @@ main .section:has(.account-signin) .default-content-wrapper > p:first-child {
   color: var(--terracotta);
 }
 
-main .section.alt .default-content-wrapper > h1,
+main .section.alt > .default-content-wrapper:first-child > h1,
+/* stylelint-disable-next-line no-descending-specificity */
 main .section:has(.account-signin) .default-content-wrapper > h1 {
   margin: 0.6rem 0 0;
   font-family: var(--font-display);
@@ -616,12 +631,13 @@ main .section:has(.account-signin) .default-content-wrapper > h1 {
 
 /* The account-page heading keeps a narrow measure; the catalogue intro heading
    runs full width (one line where it fits), matching the source. */
+/* stylelint-disable-next-line no-descending-specificity */
 main .section:has(.account-signin) .default-content-wrapper > h1 {
   max-width: 14ch;
 }
 
 /* stylelint-disable no-descending-specificity */
-main .section.alt .default-content-wrapper > h1 + p,
+main .section.alt > .default-content-wrapper:first-child > h1 + p,
 main .section:has(.account-signin) .default-content-wrapper > h1 + p {
   margin: 1rem 0 0;
   max-width: 52ch;
@@ -635,7 +651,9 @@ main .section:has(.account-signin) .default-content-wrapper > h1 + p {
    heading, description, and — for machine bands — a "How they differ" note in a
    second column. The machine head is restructured into .section-head-copy +
    .section-head-note (see decorateMachineBandHeads); coffee heads stay flat. */
+/* stylelint-disable-next-line no-descending-specificity */
 main .section:has(.cards-machine) .section-head-copy > p:first-child,
+/* stylelint-disable-next-line no-descending-specificity */
 main .section:has(.cards-coffee) .default-content-wrapper > p:first-child {
   margin: 0;
   font-family: var(--font-body);
@@ -1037,11 +1055,16 @@ main .section:has(.article-byline) .default-content-wrapper > ul strong {
   }
 
   main .section.feed .default-content-wrapper > p:first-child,
-  main .section.feed .default-content-wrapper > h2 {
+  main .section.feed .default-content-wrapper > h2,
+  main .section.feed .default-content-wrapper > :where(
+    .prosemirror-editor:first-child,
+    .prosemirror-editor:has(h2)
+  ) {
     grid-column: 1;
   }
 
-  main .section.feed .default-content-wrapper > p:last-child {
+  main .section.feed .default-content-wrapper > p:last-child,
+  main .section.feed .default-content-wrapper > :where(.prosemirror-editor:last-child) {
     grid-column: 2;
     grid-row: 1 / span 2;
     align-self: end;
@@ -1053,7 +1076,8 @@ main .section:has(.article-byline) .default-content-wrapper > ul strong {
 /* Voices section head: eyebrow + large lead testimonial (default content),
    styled to match the source. The two smaller quotes are the cards-quote block. */
 /* stylelint-disable-next-line no-descending-specificity */
-main .section.voices .default-content-wrapper > p:first-child {
+main .section.voices .default-content-wrapper > p:first-child,
+main .section.voices .default-content-wrapper .prosemirror-editor:first-child p:first-child {
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -1067,14 +1091,16 @@ main .section.voices .default-content-wrapper > p:first-child {
   color: var(--terracotta);
 }
 
-main .section.voices .default-content-wrapper > p:first-child::before {
-  content: "";
-  width: 1.75rem;
-  height: 1px;
-  background-color: currentcolor;
+
+
+/* stylelint-disable-next-line no-descending-specificity */
+main .section.voices .default-content-wrapper {
+  border-bottom: 1px solid rgb(99 77 66 / 22%);
+  padding-bottom: 2.1rem;
 }
 
-main .section.voices .default-content-wrapper > blockquote {
+main .section.voices .default-content-wrapper > blockquote,
+main .section.voices .default-content-wrapper .prosemirror-editor blockquote {
   margin: 1.4rem 0 0;
   padding: 0;
   border: 0;
@@ -1082,7 +1108,9 @@ main .section.voices .default-content-wrapper > blockquote {
 }
 
 /* stylelint-disable-next-line no-descending-specificity */
-main .section.voices .default-content-wrapper > blockquote > p:first-child {
+main .section.voices .default-content-wrapper > blockquote > p:first-child,
+/* stylelint-disable-next-line no-descending-specificity */
+main .section.voices .default-content-wrapper .prosemirror-editor blockquote > p:first-child {
   margin: 0;
   font-family: var(--font-display);
   font-size: clamp(1.85rem, 4.2vw, 3.1rem);
@@ -1092,14 +1120,19 @@ main .section.voices .default-content-wrapper > blockquote > p:first-child {
   color: var(--burgundy);
 }
 
-main .section.voices .default-content-wrapper > blockquote > p:first-child em {
+/* stylelint-disable-next-line no-descending-specificity */
+main .section.voices .default-content-wrapper > blockquote > p:first-child em,
+/* stylelint-disable-next-line no-descending-specificity */
+main .section.voices .default-content-wrapper .prosemirror-editor blockquote > p:first-child em {
   font-style: normal;
   font-weight: 800;
   color: var(--terracotta);
 }
 
 /* stylelint-disable-next-line no-descending-specificity */
-main .section.voices .default-content-wrapper > blockquote > p:last-child {
+main .section.voices .default-content-wrapper > blockquote > p:last-child,
+/* stylelint-disable-next-line no-descending-specificity */
+main .section.voices .default-content-wrapper .prosemirror-editor blockquote > p:last-child {
   margin: 1.1rem 0 0;
   font-family: var(--font-body);
   font-size: 0.76rem;
@@ -1109,7 +1142,48 @@ main .section.voices .default-content-wrapper > blockquote > p:last-child {
   color: var(--terracotta);
 }
 
-/* separate the two smaller quotes from the lead testimonial (source: ~3.8rem) */
+/* separate the two smaller quotes from the lead testimonial */
 main .section.voices .cards-quote-wrapper {
-  margin-top: 3.8rem;
+  margin-top: 2.7rem;
+}
+
+/* Preserve the feed eyebrow color against authoring UI styles loaded after site CSS. */
+main .section.feed .default-content-wrapper .prosemirror-editor:first-child p:first-child {
+  color: var(--terracotta);
+}
+
+/* Generic eyebrow default: the first paragraph of a standalone
+   default-content-wrapper (free text placed outside a block, e.g. a note
+   added after a block within a section) reads as a small eyebrow label,
+   matching the site's other eyebrows. Sections with their own bespoke
+   first-paragraph treatment (dark, feed, voices, cards-coffee bands, article
+   pages) are excluded above and keep their specific styling. */
+/* stylelint-disable-next-line no-descending-specificity */
+main .section:not(.dark, .feed, .voices, :has(.cards-coffee), :has(.article-byline))
+  .default-content-wrapper > p:first-child,
+/* stylelint-disable-next-line no-descending-specificity */
+main .section:not(.dark, .feed, .voices, :has(.cards-coffee), :has(.article-byline))
+  .default-content-wrapper .prosemirror-editor:first-child p:first-child {
+  margin: 0 0 0.6rem;
+  font-family: var(--font-body);
+  font-size: var(--fs-eyebrow);
+  font-weight: 500;
+  letter-spacing: var(--tracking-eyebrow);
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: var(--terracotta);
+}
+
+/* Preserve the generic eyebrow default (see above) against authoring UI
+   styles loaded after site CSS. */
+main .section:not(.dark, .feed, .voices, :has(.cards-coffee), :has(.article-byline))
+  .default-content-wrapper .prosemirror-editor:first-child p:first-child {
+  margin: 0 0 0.6rem;
+  font-family: var(--font-body);
+  font-size: var(--fs-eyebrow);
+  font-weight: 500;
+  letter-spacing: var(--tracking-eyebrow);
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: var(--terracotta);
 }

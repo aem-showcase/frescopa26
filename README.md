@@ -1,5 +1,7 @@
 # Frescopa 2026
-Your project's description...
+for AEM
+
+> **Test Repository**: This is a test repository for demonstration purposes.
 
 ## Environments
 - Preview: https://main--{repo}--{owner}.aem.page/
