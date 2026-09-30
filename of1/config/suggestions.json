@@ -1,0 +1,67 @@
+{
+  "title": "Find Your Perfect Brew",
+  "subtitle": "Explore coffee, tea, and the tools that bring them to life",
+  "placeholder": "Ask about our coffee, tea, or brewing equipment...",
+  "suggestions": [
+    {
+      "type": "deep-dive",
+      "label": "Tell me about The Atelier",
+      "query": "Tell me about The Atelier coffee brewer"
+    },
+    {
+      "type": "comparison",
+      "label": "Atelier vs Barista",
+      "query": "Compare The Atelier vs The Barista"
+    },
+    {
+      "type": "recommendation",
+      "label": "Best brewer for small spaces",
+      "query": "Best coffee brewer for small spaces"
+    },
+    {
+      "type": "discovery",
+      "label": "Show me all coffee brewers",
+      "query": "Show me all your coffee brewing equipment"
+    },
+    {
+      "type": "budget",
+      "label": "Brewers under $150",
+      "query": "Coffee brewers under $150"
+    },
+    {
+      "type": "deep-dive",
+      "label": "About Morning Blend Coffee",
+      "query": "Tell me about Morning Blend Coffee"
+    },
+    {
+      "type": "comparison",
+      "label": "Ethiopian vs Morning Blend",
+      "query": "Compare Single Origin Ethiopian vs Morning Blend coffee"
+    },
+    {
+      "type": "recommendation",
+      "label": "Best setup for morning rituals",
+      "query": "Best coffee setup for morning rituals"
+    },
+    {
+      "type": "discovery",
+      "label": "Tea and juice options",
+      "query": "Show me your tea and juice selection"
+    },
+    {
+      "type": "deep-dive",
+      "label": "About The Slow Pour",
+      "query": "Tell me about The Slow Pour brewer"
+    },
+    {
+      "type": "recommendation",
+      "label": "Best for hands-on brewing",
+      "query": "Best coffee brewer for hands-on brewing experience"
+    },
+    {
+      "type": "comparison",
+      "label": "The Everyday vs The Barista",
+      "query": "Compare The Everyday vs The Barista coffee brewers"
+    }
+  ]
+}
