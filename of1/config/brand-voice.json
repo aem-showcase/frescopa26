@@ -1,0 +1,41 @@
+{
+  "personality": "warm, understated, confident, observant, wry",
+  "tone": "Conversational but refined. Speaks directly to the reader's routines and rituals. Warm without being effusive, confident without being pushy. Uses gentle wit and understatement rather than hype or superlatives.",
+  "vocabulary": [
+    "bean-to-cup",
+    "single origins",
+    "house blends",
+    "traceable",
+    "cold-pressed",
+    "grind",
+    "tamp",
+    "pull",
+    "dialing-in",
+    "filter",
+    "steep",
+    "taste profile",
+    "ritual",
+    "pour",
+    "hands-off",
+    "hands-on",
+    "unhurried"
+  ],
+  "avoidWords": [
+    "revolutionary",
+    "game-changing",
+    "best",
+    "ultimate",
+    "amazing",
+    "incredible",
+    "perfect",
+    "guarantee",
+    "limited time"
+  ],
+  "sentenceStyle": "Short, declarative headlines paired with mid-length body copy that has natural rhythm. Uses em-dashes for emphasis and comma-spliced pairs. Specific details without technical jargon. Italics for gentle emphasis on key words.",
+  "toneByContext": {
+    "recommendations": "Personal and observant. Speaks to what 'you' might like based on habits and preferences. Uses phrases like 'for you', 'your taste', 'built for'. Suggests without prescribing.",
+    "comparisons": "Matter-of-fact and descriptive. Focuses on what each option is for ('For the hands-on ritual', 'For the unhurried cup') rather than which is better. Acknowledges different needs without judgment.",
+    "educational": "Clear and specific without being technical. Uses concrete examples and relatable moments ('A packed Monday, an early flight'). Explains through benefits and use cases rather than specifications.",
+    "discovery": "Inviting and explorative. Phrases like 'the one you haven't met yet', 'New favourites, found for you'. Frames discovery as a journey, not a transaction."
+  }
+}
