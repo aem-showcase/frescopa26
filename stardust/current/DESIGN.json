@@ -1,0 +1,491 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-09-30T05:42:28.986Z",
+    "stardustVersion": "0.25.0",
+    "source": "_brand-extraction.json + _computed-styles.json",
+    "originUrl": "https://of1--frescopa26--aem-showcase.aem.page"
+  },
+  "name": "Fréscopa — current state",
+  "description": "Warm, editorial coffee-brand system: cream paper grounds, burgundy display type, terracotta pill CTAs, charcoal closing bands.",
+  "colors": {
+    "background": "#f8f5ee",
+    "surface": "#f3ede3",
+    "surface-alt": "#ece2d6",
+    "sand": "#e4d6c7",
+    "text-primary": "#2d221b",
+    "text-secondary": "#5a4d45",
+    "primary": "#5f201e",
+    "primary-dark": "#481311",
+    "accent": "#ba6945",
+    "accent-hover": "#9a4f35",
+    "highlight": "#ebad54",
+    "highlight-soft": "#f0cd94",
+    "teal": "#4d7a7f",
+    "dark-surface": "#211914",
+    "dark-surface-2": "#322721",
+    "on-dark": "#f3ece1",
+    "on-dark-muted": "#c4bbad",
+    "border": "#d8cdc3",
+    "border-dark": "#51453e"
+  },
+  "colorsOklch": {
+    "background": "oklch(97% 0.010 82deg)",
+    "surface": "oklch(94.8% 0.015 78deg)",
+    "surface-alt": "oklch(91.8% 0.020 74deg)",
+    "sand": "oklch(88.4% 0.025 71deg)",
+    "text-primary": "oklch(26.2% 0.021 52deg)",
+    "text-secondary": "oklch(43% 0.022 52deg)",
+    "primary": "oklch(34% 0.093 25deg)",
+    "primary-dark": "oklch(27.5% 0.082 26deg)",
+    "accent": "oklch(60.5% 0.116 44deg)",
+    "accent-hover": "oklch(51.5% 0.108 40deg)",
+    "highlight": "oklch(79% 0.128 74deg)",
+    "highlight-soft": "oklch(86.5% 0.083 80deg)",
+    "teal": "oklch(55% 0.05 205deg)",
+    "dark-surface": "oklch(22.2% 0.016 52deg)",
+    "dark-surface-2": "oklch(28.2% 0.020 50deg)",
+    "on-dark": "oklch(94.5% 0.016 80deg)",
+    "on-dark-muted": "oklch(79.5% 0.021 78deg)",
+    "border": "oklch(85.5% 0.018 68deg)",
+    "border-dark": "oklch(40% 0.020 55deg)"
+  },
+  "typography": {
+    "heading": {
+      "family": "\"Schibsted Grotesk\", system-ui, sans-serif",
+      "weight": "800",
+      "style": "normal",
+      "letterSpacing": "-0.02em",
+      "lineHeight": "1.03–1.15",
+      "color": "#5f201e"
+    },
+    "body": {
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": "400",
+      "style": "normal",
+      "size": "17px (1.0625rem)",
+      "lineHeight": "1.62",
+      "color": "#5a4d45"
+    },
+    "eyebrow": {
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": "500",
+      "size": "11.5–12px",
+      "textTransform": "uppercase",
+      "letterSpacing": "0.2em",
+      "color": "#ba6945"
+    },
+    "button": {
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": "600",
+      "size": "15px"
+    },
+    "scale": {
+      "h1": "clamp(2.9rem, 1.7rem + 4.6vw, 5.4rem)",
+      "h2": "clamp(1.8rem, 1.3rem + 2vw, 2.8rem)",
+      "h3": "clamp(1.6rem, 1.25rem + 1.4vw, 2.3rem)",
+      "h4": "clamp(1.25rem, 1.08rem + 0.7vw, 1.6rem)",
+      "bodyLg": "clamp(1.125rem, 0.98rem + 0.5vw, 1.3125rem)",
+      "body": "1.0625rem",
+      "sm": "0.9375rem",
+      "eyebrow": "0.75rem",
+      "display": "clamp(3.4rem, 1.1rem + 8.4vw, 8rem)"
+    },
+    "measured": {
+      "h1": "86.4px/800",
+      "h2": "44.8px/800",
+      "h3": "25.6px/800",
+      "h4": "25.6px/800",
+      "body": "17px/400"
+    },
+    "scaleAudit": "ad-hoc (fluid clamp per level)",
+    "fontSubstitution": "none — Schibsted Grotesk and Hanken Grotesk are open-licence Google Fonts self-hosted under /fonts/"
+  },
+  "rounded": {
+    "sm": "8px",
+    "md": "14px",
+    "lg": "22px",
+    "xl": "32px",
+    "pill": "999px"
+  },
+  "shapes": {
+    "button": {
+      "borderRadius": "999px"
+    },
+    "chip": {
+      "borderRadius": "999px"
+    },
+    "card": {
+      "borderRadius": "32px"
+    },
+    "feature-media": {
+      "borderRadius": "22px"
+    },
+    "inner-panel": {
+      "borderRadius": "14px"
+    },
+    "small-button": {
+      "borderRadius": "11px"
+    }
+  },
+  "spacing": {
+    "3xs": "0.25rem",
+    "2xs": "0.5rem",
+    "xs": "0.75rem",
+    "sm": "1rem",
+    "md": "1.5rem",
+    "lg": "2.5rem",
+    "xl": "4rem",
+    "2xl": "6rem",
+    "section-y": "72px",
+    "content": "1120px",
+    "content-wide": "1320px",
+    "content-narrow": "760px",
+    "gutter": "clamp(1.25rem, 0.4rem + 3vw, 3rem)",
+    "nav-height": "72px"
+  },
+  "shadows": {
+    "sm": "0 1px 2px oklch(30% 0.03 50deg / 6%), 0 2px 8px oklch(30% 0.03 50deg / 5%)",
+    "md": "0 4px 14px oklch(30% 0.03 50deg / 7%), 0 14px 34px oklch(30% 0.03 50deg / 8%)",
+    "lg": "0 14px 34px oklch(26% 0.03 50deg / 10%), 0 34px 80px oklch(26% 0.03 50deg / 13%)"
+  },
+  "motion": {
+    "easeQuint": "cubic-bezier(0.22, 1, 0.36, 1)",
+    "easeExpo": "cubic-bezier(0.16, 1, 0.3, 1)",
+    "dur1": "0.35s",
+    "dur2": "0.6s",
+    "dur3": "0.9s"
+  },
+  "components": {
+    "button-primary": {
+      "background": "#ba6945",
+      "color": "#f3ece1",
+      "borderRadius": "999px",
+      "padding": "12.75px 22.5px",
+      "font": "600 15px Hanken Grotesk",
+      "hover": {
+        "background": "#9a4f35"
+      }
+    },
+    "button-secondary-dark": {
+      "background": "transparent",
+      "color": "#f3ece1",
+      "border": "1px solid rgb(from cream / 34%)",
+      "borderRadius": "999px",
+      "hover": {
+        "background": "cream / 12%",
+        "borderColor": "#f3ece1"
+      }
+    },
+    "button-light": {
+      "background": "#f3ece1",
+      "color": "#2d221b",
+      "borderRadius": "999px"
+    },
+    "chip": {
+      "background": "transparent",
+      "color": "#5a4d45",
+      "border": "1px solid #d8cdc3",
+      "borderRadius": "999px",
+      "textTransform": "uppercase",
+      "size": "11.84px",
+      "active": {
+        "background": "#5f201e",
+        "color": "#f3ece1"
+      }
+    },
+    "card": {
+      "background": "#f8f5ee",
+      "borderRadius": "32px",
+      "boxShadow": "0 4px 14px oklch(30% 0.03 50deg / 7%), 0 14px 34px oklch(30% 0.03 50deg / 8%)"
+    },
+    "text-link": {
+      "color": "#ba6945",
+      "hover": {
+        "color": "#9a4f35"
+      },
+      "suffix": "→"
+    },
+    "eyebrow": {
+      "color": "#ba6945",
+      "textTransform": "uppercase",
+      "letterSpacing": "0.2em"
+    },
+    "header": {
+      "height": "72px",
+      "background": "transparent over hero, paper elsewhere",
+      "color": "#2d221b"
+    },
+    "footer": {
+      "background": "#211914",
+      "color": "#f3ece1",
+      "muted": "#c4bbad"
+    }
+  },
+  "extensions": {
+    "componentStyle": [
+      "full-bleed photo hero with dark scrim",
+      "eyebrow label (uppercase, 0.2em tracking, terracotta)",
+      "pill CTA (terracotta fill, cream text)",
+      "pill chips / filter tabs",
+      "soft-shadow product card (32px radius)",
+      "alternating paper / paper-2 section bands",
+      "dark charcoal closing CTA band + footer",
+      "pull-quote testimonial with terracotta emphasis"
+    ],
+    "motifs": {
+      "radius": [
+        {
+          "value": "999px",
+          "count": 56,
+          "area": 301865,
+          "source": {
+            "url": "https://of1--frescopa26--aem-showcase.aem.page/",
+            "selector": "main > div:nth-of-type(1) > div > div > div:nth-of-type(2) > div > p:nth-of-type(3) > a"
+          }
+        },
+        {
+          "value": "32px",
+          "count": 24,
+          "area": 4450141,
+          "source": {
+            "url": "https://of1--frescopa26--aem-showcase.aem.page/",
+            "selector": "main > div:nth-of-type(3) > div > div > div:nth-of-type(2) > div:nth-of-type(1)"
+          }
+        },
+        {
+          "value": "50%",
+          "count": 18,
+          "area": 28800,
+          "source": {
+            "url": "https://of1--frescopa26--aem-showcase.aem.page/",
+            "selector": "footer > div > div > div:nth-of-type(5) > ul > li:nth-of-type(1) > a"
+          }
+        },
+        {
+          "value": "11px",
+          "count": 12,
+          "area": 20736,
+          "source": {
+            "url": "https://of1--frescopa26--aem-showcase.aem.page/",
+            "selector": "main > div:nth-of-type(4) > div > div > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) > button:nth-of-type(1)"
+          }
+        },
+        {
+          "value": "22px",
+          "count": 6,
+          "area": 921972,
+          "source": {
+            "url": "https://of1--frescopa26--aem-showcase.aem.page/",
+            "selector": "main > div:nth-of-type(5) > div:nth-of-type(2) > div > ul > li:nth-of-type(1)"
+          }
+        },
+        {
+          "value": "2px",
+          "count": 3,
+          "area": 120,
+          "source": {
+            "url": "https://of1--frescopa26--aem-showcase.aem.page/",
+            "selector": "#nav > div:nth-of-type(1) > button > span"
+          }
+        },
+        {
+          "value": "14px",
+          "count": 2,
+          "area": 96793,
+          "source": {
+            "url": "https://of1--frescopa26--aem-showcase.aem.page/",
+            "selector": "main > div:nth-of-type(4) > div > div > div:nth-of-type(2) > div:nth-of-type(2)"
+          }
+        }
+      ],
+      "shadows": [
+        {
+          "value": "oklch(0.3 0.03 50 / 0.07) 0px 4px 14px 0px, oklch(0.3 0.03 50 / 0.08) 0px 14px 34px 0px",
+          "count": 24,
+          "source": {
+            "url": "https://of1--frescopa26--aem-showcase.aem.page/",
+            "selector": "main > div:nth-of-type(3) > div > div > div:nth-of-type(2) > div:nth-of-type(1)"
+          }
+        },
+        {
+          "value": "oklch(0.3 0.03 50 / 0.06) 0px 1px 2px 0px, oklch(0.3 0.03 50 / 0.05) 0px 2px 8px 0px",
+          "count": 2,
+          "source": {
+            "url": "https://of1--frescopa26--aem-showcase.aem.page/",
+            "selector": "main > div:nth-of-type(4) > div > div > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) > button:nth-of-type(1)"
+          }
+        }
+      ],
+      "gradients": []
+    },
+    "voice": {
+      "heroHeadline": "Every morning, perfected.",
+      "tagline": "The first Fréscopa coffee machine with a feel for your mornings. It learns your taste, matches your mood, and takes care of the rest.",
+      "firstParagraph": "The first Fréscopa machine with a feel for your mornings. It learns what you love, softens or sharpens to match your mood, and quietly takes care of the rest. Barista craft, kept warm by a little intelligence.",
+      "ctaSamples": [
+        "Meet your coffee agent →",
+        "Order the Atelier",
+        "Find a café near you →"
+      ],
+      "heroImage": {
+        "url": "https://of1--frescopa26--aem-showcase.aem.page/media_1a775c161149ea61e50ce787b6c0adb646148c6ca.jpg",
+        "source": "index main > div:nth-of-type(1) picture img"
+      },
+      "heroMedium": null,
+      "register": "brand",
+      "toneGuess": "warm, confident, understated; short declarative headlines with a wry twist"
+    },
+    "voiceTable": {
+      "ctaFrequency": [
+        {
+          "label": "Machines",
+          "count": 6
+        },
+        {
+          "label": "Join the list→",
+          "count": 5
+        },
+        {
+          "label": "The Atelier",
+          "count": 3
+        },
+        {
+          "label": "Beverages",
+          "count": 3
+        },
+        {
+          "label": "Café",
+          "count": 3
+        },
+        {
+          "label": "Journal",
+          "count": 3
+        },
+        {
+          "label": "Add to cart →",
+          "count": 3
+        },
+        {
+          "label": "Coffee",
+          "count": 3
+        },
+        {
+          "label": "Tea",
+          "count": 3
+        },
+        {
+          "label": "Cold-pressed juice",
+          "count": 3
+        },
+        {
+          "label": "Accessories",
+          "count": 3
+        },
+        {
+          "label": "Our story",
+          "count": 3
+        }
+      ],
+      "headingFrequency": [
+        {
+          "text": "Shop",
+          "pages": 3
+        },
+        {
+          "text": "Company",
+          "pages": 3
+        },
+        {
+          "text": "Support",
+          "pages": 3
+        }
+      ],
+      "headingsUppercasePercent": 0,
+      "distinctHeadings": 31,
+      "distinctCtaLabels": 29
+    },
+    "imagery": {
+      "totalImgs": 21,
+      "emptyAltCount": 15,
+      "style": "warm, low-key interior photography: wood, stone, brass/steel machines, steam, amber window light"
+    },
+    "logo": {
+      "source": "img",
+      "sourceSelector": "header .nav-brand a > picture > img[alt=\"Fréscopa\"]",
+      "url": "https://of1--frescopa26--aem-showcase.aem.page/fragments/media_1edd2a689a1bf64571235eec46bc97c0200c9bff3.svg",
+      "file": "assets/logo.svg",
+      "format": "svg",
+      "intrinsic": "1391x378",
+      "colors": [
+        "#58181d",
+        "#eaa33a"
+      ],
+      "variantsCaptured": [
+        "primary (burgundy wordmark + amber mark, for light backgrounds)"
+      ],
+      "variantsNotCaptured": [
+        "on-dark (repo ships icons/frescopa-logo-light.svg, cream #f3ece0 wordmark, used in footer)",
+        "monochrome"
+      ]
+    },
+    "systemComponents": [
+      {
+        "kind": "header",
+        "occurrences": 3,
+        "headings": [],
+        "ctas": [
+          "The Atelier",
+          "Machines",
+          "Beverages",
+          "Café",
+          "Journal"
+        ],
+        "notes": "logo left, centred nav, search/account/cart icons right; transparent over hero on home"
+      },
+      {
+        "kind": "footer",
+        "occurrences": 3,
+        "headings": [
+          "Shop",
+          "Company",
+          "Support"
+        ],
+        "ctas": [
+          "Sign up",
+          "Coffee",
+          "Tea",
+          "Cold-pressed juice",
+          "Machines",
+          "Accessories",
+          "Our story",
+          "Sustainability",
+          "Fréscopa Café",
+          "Careers",
+          "Contact us",
+          "Delivery & returns",
+          "Register your Atelier",
+          "Help centre"
+        ],
+        "notes": "charcoal background, newsletter form, social icons, fictional-brand disclaimer"
+      }
+    ],
+    "sourcePages": [
+      {
+        "slug": "index",
+        "url": "https://of1--frescopa26--aem-showcase.aem.page/",
+        "screenshot": "assets/screenshots/index.png"
+      },
+      {
+        "slug": "machines",
+        "url": "https://of1--frescopa26--aem-showcase.aem.page/machines",
+        "screenshot": "assets/screenshots/machines.png"
+      },
+      {
+        "slug": "beverages",
+        "url": "https://of1--frescopa26--aem-showcase.aem.page/beverages",
+        "screenshot": "assets/screenshots/beverages.png"
+      }
+    ]
+  }
+}

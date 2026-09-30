@@ -1,0 +1,87 @@
+{
+  "discovery": {
+    "fetchTechnique": "headless",
+    "count": 3,
+    "concurrency": 4,
+    "technique": "sitemap.xml",
+    "totalDiscovered": 14,
+    "discovered": [
+      "/",
+      "/header",
+      "/beverages",
+      "/blog",
+      "/cafe",
+      "/machines",
+      "/myatelier",
+      "/fragments/nav",
+      "/fragments/footer",
+      "/beverages/coffee",
+      "/blog/atelier-taste",
+      "/machines/atelier",
+      "/japan",
+      "/of1"
+    ],
+    "filteredAsJunk": [
+      "/header",
+      "/fragments/nav",
+      "/fragments/footer",
+      "/of1"
+    ],
+    "selected": [
+      "/",
+      "/machines",
+      "/beverages"
+    ],
+    "cut": [
+      "/blog",
+      "/cafe",
+      "/myatelier",
+      "/beverages/coffee",
+      "/blog/atelier-taste",
+      "/machines/atelier",
+      "/japan"
+    ],
+    "userChoice": "cap 3 (orchestrator: homepage + 2 key category pages)"
+  },
+  "consent": {
+    "method": "auto"
+  },
+  "favicon": {
+    "url": "https://of1--frescopa26--aem-showcase.aem.page/favicon.ico",
+    "file": "assets/favicon.ico"
+  },
+  "crawl": {
+    "failures": []
+  },
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-09-30T05:42:28.986Z",
+    "stardustVersion": "0.25.0"
+  },
+  "visionCheck": [
+    {
+      "slug": "index",
+      "verdict": "ok",
+      "notes": "Photo hero (espresso machine), 3 product cards, packaging photo, café band all rendered; palette matches; logo visible in header."
+    },
+    {
+      "slug": "machines",
+      "verdict": "ok",
+      "notes": "Real machine product photography on every card; filter chips; charcoal footer."
+    },
+    {
+      "slug": "beverages",
+      "verdict": "ok",
+      "notes": "Three real category photos (espresso pour, tea, juice); dark CTA band."
+    }
+  ],
+  "blockedCapture": false,
+  "siblingCandidates": [
+    {
+      "origin": "https://frescopa.coffee",
+      "confidence": "high",
+      "evidence": "repo-config production domain",
+      "decision": "excluded (orchestrator mandated EDS preview origin only)"
+    }
+  ]
+}
