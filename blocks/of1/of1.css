@@ -424,14 +424,11 @@ main .section.of1-container > .of1-wrapper {
   font-size: var(--fs-sm, 0.9375rem);
   font-weight: 600;
   color: var(--primary);
+  text-decoration: none;
   background: none;
   border: none;
   cursor: pointer;
   transition: color var(--transition);
-}
-
-.generative-suggestions .suggestion-restart::after {
-  content: "→";
 }
 
 .generative-suggestions .suggestion-restart:hover {
