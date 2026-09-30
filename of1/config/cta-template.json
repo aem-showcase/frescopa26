@@ -1,0 +1,9 @@
+{
+  "html": "<div style=\"background: #211914; padding: 4rem 2rem; text-align: center; border-radius: 32px; margin: 2rem 0;\"><h2 style=\"color: #f3ece1; font-family: 'Schibsted Grotesk', system-ui, sans-serif; font-size: 2rem; font-weight: 800; margin: 0 0 1rem 0; line-height: 1.15; letter-spacing: -0.02em;\">{{title}}</h2><p style=\"color: #c4bbad; font-family: 'Hanken Grotesk', system-ui, sans-serif; font-size: 1.1rem; margin: 0 auto 2rem auto; max-width: 600px; line-height: 1.62;\">{{description}}</p><a href=\"{{href}}\" style=\"display: inline-block; background: #ba6945; color: #f3ece1; font-family: 'Hanken Grotesk', system-ui, sans-serif; font-size: 15px; font-weight: 600; padding: 12.75px 22.5px; border-radius: 999px; text-decoration: none; transition: background 0.35s cubic-bezier(0.22, 1, 0.36, 1);\">{{buttonText}}</a></div>",
+  "slots": ["title", "description", "buttonText"],
+  "fallback": {
+    "title": "Find Your Perfect Brew",
+    "description": "Discover handcrafted coffee and machines tailored to your taste.",
+    "buttonText": "Explore Now"
+  }
+}
