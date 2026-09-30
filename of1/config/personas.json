@@ -1,0 +1,98 @@
+[
+  {
+    "id": "quality-seeker",
+    "name": "The Quality Seeker",
+    "description": "Affluent coffee enthusiast who values premium experiences, intelligent technology, and personalization. Willing to invest in the best equipment and beans for exceptional daily coffee.",
+    "keywords": ["premium", "best coffee machine", "intelligent", "personalized", "high quality", "luxury coffee", "smart machine", "learning technology", "atelier", "investment", "professional quality"],
+    "priorities": ["personalization", "quality", "convenience", "technology", "sustainability"],
+    "recommendedProducts": ["the-atelier", "single-origin-ethiopian", "the-barista"],
+    "intentProfile": {
+      "explore": 0.3,
+      "research": 0.9,
+      "compare": 0.7,
+      "purchase": 0.7,
+      "deals": 0.1,
+      "support": 0.4
+    }
+  },
+  {
+    "id": "practical-enthusiast",
+    "name": "The Practical Enthusiast",
+    "description": "Busy professional who loves good coffee but needs reliable, straightforward equipment that fits their budget and lifestyle. Values consistency and ease of use over advanced features.",
+    "keywords": ["affordable", "reliable", "simple", "everyday coffee", "busy morning", "easy to use", "compact", "consistent", "budget friendly", "no fuss", "practical"],
+    "priorities": ["reliability", "value", "simplicity", "consistency", "convenience"],
+    "recommendedProducts": ["the-atelier-mini", "the-everyday", "morning-blend-coffee", "the-carafe"],
+    "intentProfile": {
+      "explore": 0.5,
+      "research": 0.6,
+      "compare": 0.8,
+      "purchase": 0.8,
+      "deals": 0.7,
+      "support": 0.3
+    }
+  },
+  {
+    "id": "hands-on-craftsperson",
+    "name": "The Hands-On Craftsperson",
+    "description": "Coffee ritualist who enjoys the manual process of making espresso. Values tactile control, learning barista skills, and the meditative morning routine of crafting the perfect shot.",
+    "keywords": ["manual espresso", "barista", "hands on", "coffee ritual", "learn to make coffee", "espresso technique", "craft coffee", "morning routine", "tactile", "control"],
+    "priorities": ["manual control", "craft", "learning", "ritual", "quality"],
+    "recommendedProducts": ["the-barista", "single-origin-ethiopian", "the-slow-pour"],
+    "intentProfile": {
+      "explore": 0.7,
+      "research": 0.8,
+      "compare": 0.5,
+      "purchase": 0.4,
+      "deals": 0.3,
+      "support": 0.6
+    }
+  },
+  {
+    "id": "mindful-ritualist",
+    "name": "The Mindful Ritualist",
+    "description": "Values the slow, intentional process of brewing coffee or tea as a form of morning meditation. Appreciates traditional methods, natural ingredients, and taking time to savor each cup.",
+    "keywords": ["slow coffee", "pour over", "tea", "ritual", "mindful", "meditation", "morning routine", "traditional", "savor", "gentle", "unhurried", "contemplative"],
+    "priorities": ["ritual", "mindfulness", "tradition", "quality", "natural"],
+    "recommendedProducts": ["the-slow-pour", "english-breakfast-tea", "single-origin-ethiopian"],
+    "intentProfile": {
+      "explore": 0.8,
+      "research": 0.7,
+      "compare": 0.4,
+      "purchase": 0.3,
+      "deals": 0.2,
+      "support": 0.3
+    }
+  },
+  {
+    "id": "experiential-explorer",
+    "name": "The Experiential Explorer",
+    "description": "Curious and social coffee lover who enjoys visiting cafés, taking classes, and discovering new flavors. Values experiences over ownership and loves learning about coffee culture.",
+    "keywords": ["cafe", "coffee shop", "classes", "tasting", "visit", "experience", "learn", "social", "workshop", "community", "discover", "try new things"],
+    "priorities": ["experience", "community", "learning", "exploration", "social"],
+    "recommendedProducts": ["single-origin-ethiopian", "cold-pressed-citrus", "english-breakfast-tea"],
+    "intentProfile": {
+      "explore": 0.9,
+      "research": 0.5,
+      "compare": 0.3,
+      "purchase": 0.2,
+      "deals": 0.4,
+      "support": 0.6
+    }
+  },
+  {
+    "id": "health-conscious-starter",
+    "name": "The Health-Conscious Starter",
+    "description": "New to premium coffee culture but interested in healthy, natural beverages without additives. Values transparency, organic options, and wellness-focused products.",
+    "keywords": ["healthy", "natural", "organic", "no added sugar", "cold pressed", "wellness", "fresh", "clean", "pure", "juice", "herbal tea", "starter"],
+    "priorities": ["health", "natural ingredients", "transparency", "value", "variety"],
+    "recommendedProducts": ["cold-pressed-citrus", "english-breakfast-tea", "the-carafe", "morning-blend-coffee"],
+    "intentProfile": {
+      "explore": 0.7,
+      "research": 0.6,
+      "compare": 0.5,
+      "purchase": 0.6,
+      "deals": 0.6,
+      "support": 0.4
+    }
+  }
+]

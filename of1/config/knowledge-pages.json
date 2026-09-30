@@ -1,0 +1,2050 @@
+[
+  {
+    "url": "https://of1--frescopa26--aem-showcase.aem.page/machines",
+    "title": "Made in the workshop.",
+    "blocks": [
+      {
+        "tag": "h1",
+        "text": "Made in the workshop."
+      },
+      {
+        "tag": "p",
+        "text": "Four families of machine, each tuned by hand for a different kind of morning. Start with how you like to make it — we'll help you find the rest."
+      },
+      {
+        "tag": "p",
+        "text": "BEAN-TO-CUP · PREMIUM"
+      },
+      {
+        "tag": "h2",
+        "text": "The thinking machines"
+      },
+      {
+        "tag": "p",
+        "text": "Whole beans in, a finished cup out — milk, timing and all. The most hands-off way to drink well, and the only machines that actually learn your taste."
+      },
+      {
+        "tag": "p",
+        "text": "The Atelier learns and adapts on its own; the Mini carries the same brain to a smaller counter."
+      },
+      {
+        "tag": "h3",
+        "text": "The Atelier"
+      },
+      {
+        "tag": "p",
+        "text": "It senses what you like, builds a taste profile, reads the day ahead and pours accordingly — quietly taking care of the rest."
+      },
+      {
+        "tag": "li",
+        "text": "Learns your taste cup by cup, no dialing-in"
+      },
+      {
+        "tag": "li",
+        "text": "Reads your calendar and mood to pace the morning"
+      },
+      {
+        "tag": "li",
+        "text": "Reorders beans before you run out"
+      },
+      {
+        "tag": "h3",
+        "text": "The Atelier Mini"
+      },
+      {
+        "tag": "p",
+        "text": "The same clever heart, sized for smaller kitchens."
+      },
+      {
+        "tag": "p",
+        "text": "ESPRESSO"
+      },
+      {
+        "tag": "h2",
+        "text": "For the hands-on ritual"
+      },
+      {
+        "tag": "p",
+        "text": "Grind, tamp, pull. Machines for people who want to be the barista — precise, tactile, and built to reward practice."
+      },
+      {
+        "tag": "p",
+        "text": "The Barista gives you full manual control; the Everyday keeps it simple for a reliable shot each morning."
+      },
+      {
+        "tag": "h3",
+        "text": "The Barista"
+      },
+      {
+        "tag": "p",
+        "text": "A hands-on machine for the morning ritualist."
+      },
+      {
+        "tag": "h3",
+        "text": "The Everyday"
+      },
+      {
+        "tag": "p",
+        "text": "Honest espresso, every single morning."
+      },
+      {
+        "tag": "p",
+        "text": "FILTER"
+      },
+      {
+        "tag": "h2",
+        "text": "Slow and even"
+      },
+      {
+        "tag": "p",
+        "text": "Clean, balanced filter coffee for the unhurried cup — the kind you sip through a quiet morning."
+      },
+      {
+        "tag": "p",
+        "text": "One machine, perfected: even saturation and gentle timing, so every batch tastes the same."
+      },
+      {
+        "tag": "h3",
+        "text": "The Slow Pour"
+      },
+      {
+        "tag": "p",
+        "text": "Filter coffee, unhurried and beautifully even."
+      },
+      {
+        "tag": "p",
+        "text": "COLD BREW"
+      },
+      {
+        "tag": "h2",
+        "text": "Ready by morning"
+      },
+      {
+        "tag": "p",
+        "text": "Smooth, low-acid cold brew steeped overnight — poured cold straight from the fridge."
+      },
+      {
+        "tag": "p",
+        "text": "Set it before bed; the Carafe does the steeping while you sleep."
+      },
+      {
+        "tag": "h3",
+        "text": "The Carafe"
+      },
+      {
+        "tag": "p",
+        "text": "Smooth cold brew, ready and waiting by morning."
+      },
+      {
+        "tag": "img",
+        "src": "https://of1--frescopa26--aem-showcase.aem.page/media_1a775c161149ea61e50ce787b6c0adb646148c6ca.jpg?width=2000&format=webply&optimize=medium",
+        "alt": "",
+        "w": 1408,
+        "h": 768
+      },
+      {
+        "tag": "img",
+        "src": "https://of1--frescopa26--aem-showcase.aem.page/media_1017eb8d437ebe44b4a61e0865dcaef05ff3d934a.png?width=2000&format=webply&optimize=medium",
+        "alt": "",
+        "w": 1408,
+        "h": 768
+      },
+      {
+        "tag": "img",
+        "src": "https://of1--frescopa26--aem-showcase.aem.page/media_1db811b17fbc255479a69bb6ae75e55e55fbd2ea3.png?width=2000&format=webply&optimize=medium",
+        "alt": "",
+        "w": 1152,
+        "h": 928
+      },
+      {
+        "tag": "img",
+        "src": "https://of1--frescopa26--aem-showcase.aem.page/media_1dd4513b3aaf352944950aa2185c9927305b2f93d.png?width=2000&format=webply&optimize=medium",
+        "alt": "",
+        "w": 1152,
+        "h": 928
+      }
+    ]
+  },
+  {
+    "url": "https://of1--frescopa26--aem-showcase.aem.page/machines/atelier",
+    "title": "The Atelier",
+    "blocks": [
+      {
+        "tag": "h1",
+        "text": "The Atelier"
+      },
+      {
+        "tag": "p",
+        "text": "The first Fréscopa machine with a feel for your mornings. It learns what you love, reads the shape of your day, and quietly takes care of the rest."
+      },
+      {
+        "tag": "p",
+        "text": "Finish — Cream"
+      },
+      {
+        "tag": "li",
+        "text": "Free delivery, and we'll set it up for you."
+      },
+      {
+        "tag": "li",
+        "text": "Two-year workshop guarantee."
+      },
+      {
+        "tag": "li",
+        "text": "Thirty mornings to fall for it, or send it back."
+      },
+      {
+        "tag": "p",
+        "text": "HOW IT ACTUALLY WORKS"
+      },
+      {
+        "tag": "h2",
+        "text": "It learns your taste. Here's how."
+      },
+      {
+        "tag": "p",
+        "text": "Not a preset menu, and not a guess. The Atelier works the way a good barista does — it pays attention, remembers, and adjusts. Four quiet steps, running every morning."
+      },
+      {
+        "tag": "p",
+        "text": "Grind, flow, strength, temperature."
+      },
+      {
+        "tag": "p",
+        "text": "A profile per person, refined daily."
+      },
+      {
+        "tag": "p",
+        "text": "Time, calendar, weather, who's up."
+      },
+      {
+        "tag": "p",
+        "text": "Warms up, pours, reorders."
+      },
+      {
+        "tag": "h3",
+        "text": "It tastes every cup"
+      },
+      {
+        "tag": "p",
+        "text": "A ring of sensors watches every extraction — the grind size, how fast the water flows, the strength in the cup, and the temperature at the group head. The same signals a barista feels by hand, read hundreds of times a second."
+      },
+      {
+        "tag": "p",
+        "text": "YOUR FLAVOUR DNA AND MORNING ROUTINES STAY ON YOUR MACHINE AND YOUR ACCOUNT. YOU CAN REVIEW WHAT IT HAS LEARNED, CORRECT IT, OR WIPE IT CLEAN, ANY TIME."
+      },
+      {
+        "tag": "p",
+        "text": "SEE IT IN THE MORNING"
+      },
+      {
+        "tag": "h2",
+        "text": "Two minutes in a real kitchen."
+      },
+      {
+        "tag": "p",
+        "text": "THE CLAIMS, ANSWERED"
+      },
+      {
+        "tag": "h2",
+        "text": "Every promise, backed up."
+      },
+      {
+        "tag": "p",
+        "text": "From your first cup it tracks strength, temperature and milk, and settles into your preference within about a week."
+      },
+      {
+        "tag": "p",
+        "text": "EVERY DETAIL"
+      },
+      {
+        "tag": "h2",
+        "text": "The full specification."
+      },
+      {
+        "tag": "h3",
+        "text": "DESIGN AND BUILD"
+      },
+      {
+        "tag": "h3",
+        "text": "BREWING"
+      },
+      {
+        "tag": "h3",
+        "text": "INTELLIGENCE AND CONNECTIVITY"
+      },
+      {
+        "tag": "h3",
+        "text": "POWER AND SOUND"
+      },
+      {
+        "tag": "h3",
+        "text": "SUSTAINABILITY"
+      },
+      {
+        "tag": "h3",
+        "text": "DELIVERY AND RETURNS"
+      },
+      {
+        "tag": "h3",
+        "text": "In the box"
+      },
+      {
+        "tag": "li",
+        "text": "The Atelier machine"
+      },
+      {
+        "tag": "li",
+        "text": "Starter bag of house beans, 250 g"
+      },
+      {
+        "tag": "li",
+        "text": "Reusable pod and scoop"
+      },
+      {
+        "tag": "li",
+        "text": "Water filter cartridge"
+      },
+      {
+        "tag": "li",
+        "text": "Quick-start card"
+      },
+      {
+        "tag": "li",
+        "text": "Power cable"
+      },
+      {
+        "tag": "p",
+        "text": "HOW IT LEARNS YOU"
+      },
+      {
+        "tag": "h2",
+        "text": "Your taste, drawn one cup at a time."
+      },
+      {
+        "tag": "p",
+        "text": "We call the picture the Atelier builds your flavour DNA. Tap a profile to see how a Tuesday, a slow Sunday, and a late evening each pour a little differently."
+      },
+      {
+        "tag": "p",
+        "text": "Brisk and a little bolder. Enough to meet the day, never so much it rushes you."
+      },
+      {
+        "tag": "p",
+        "text": "WHAT OWNERS SAY"
+      },
+      {
+        "tag": "h2",
+        "text": "The verdict, three months in."
+      },
+      {
+        "tag": "p",
+        "text": "from 214 verified owners"
+      },
+      {
+        "tag": "p",
+        "text": "BEFORE YOU DECIDE"
+      },
+      {
+        "tag": "h2",
+        "text": "Every last hesitation, handled."
+      },
+      {
+        "tag": "p",
+        "text": "The small doubts that keep a good machine in its box. Here's the honest answer to each."
+      },
+      {
+        "tag": "p",
+        "text": "Ask us anything else"
+      },
+      {
+        "tag": "p",
+        "text": "Not at all. Delivery includes a full setup, so it's pouring before we leave. If anything ever feels off, we'll talk you through it."
+      },
+      {
+        "tag": "p",
+        "text": "WAYS TO BUY"
+      },
+      {
+        "tag": "h2",
+        "text": "Start with the machine, or the whole ritual."
+      },
+      {
+        "tag": "h3",
+        "text": "The Atelier"
+      },
+      {
+        "tag": "p",
+        "text": "The machine, delivered and set up in your kitchen. Everything it needs to start learning you."
+      },
+      {
+        "tag": "h3",
+        "text": "The Atelier + a year of beans"
+      },
+      {
+        "tag": "p",
+        "text": "The machine, plus house beans delivered as you need them for a year. It reorders; you never run dry."
+      },
+      {
+        "tag": "h3",
+        "text": "The Atelier + Barista Kit"
+      },
+      {
+        "tag": "p",
+        "text": "Adds the milk jug, tamper, and two ceramic cups — for the mornings you want to do it by hand."
+      },
+      {
+        "tag": "p",
+        "text": "PAIRS WELL WITH"
+      },
+      {
+        "tag": "h2",
+        "text": "Stock the shelf beside it."
+      },
+      {
+        "tag": "li",
+        "text": "COFFEE The house pour Our everyday blend, coaxed a little rounder for the season. $18 Add to cart →"
+      },
+      {
+        "tag": "h3",
+        "text": "The house pour"
+      },
+      {
+        "tag": "p",
+        "text": "Our everyday blend, coaxed a little rounder for the season."
+      },
+      {
+        "tag": "li",
+        "text": "TEA Honeybush and orange peel Caffeine-free, and quietly sweet. Made for slowing down. $14 Add to cart →"
+      },
+      {
+        "tag": "h3",
+        "text": "Honeybush and orange peel"
+      },
+      {
+        "tag": "p",
+        "text": "Caffeine-free, and quietly sweet. Made for slowing down."
+      },
+      {
+        "tag": "li",
+        "text": "JUICE Cold-pressed citrus Three oranges, one grapefruit, and a whisper of ginger. $10 Add to cart →"
+      },
+      {
+        "tag": "h3",
+        "text": "Cold-pressed citrus"
+      },
+      {
+        "tag": "p",
+        "text": "Three oranges, one grapefruit, and a whisper of ginger."
+      },
+      {
+        "tag": "img",
+        "src": "https://of1--frescopa26--aem-showcase.aem.page/machines/media_1a775c161149ea61e50ce787b6c0adb646148c6ca.jpg?width=750&format=jpg&optimize=medium",
+        "alt": "",
+        "w": 750,
+        "h": 409
+      },
+      {
+        "tag": "img",
+        "src": "https://of1--frescopa26--aem-showcase.aem.page/machines/media_1a775c161149ea61e50ce787b6c0adb646148c6ca.jpg?width=750&format=jpg&optimize=medium",
+        "alt": "",
+        "w": 750,
+        "h": 409
+      },
+      {
+        "tag": "img",
+        "src": "https://of1--frescopa26--aem-showcase.aem.page/machines/media_132718180b6190179a138b13595a42c32f51665ed.jpg?width=750&format=jpg&optimize=medium",
+        "alt": "",
+        "w": 750,
+        "h": 409
+      },
+      {
+        "tag": "img",
+        "src": "https://of1--frescopa26--aem-showcase.aem.page/machines/media_14dda38183367f1ef5f700eaf66d1a13a59bdd756.jpg?width=750&format=jpg&optimize=medium",
+        "alt": "",
+        "w": 750,
+        "h": 409
+      },
+      {
+        "tag": "img",
+        "src": "https://of1--frescopa26--aem-showcase.aem.page/machines/media_1ae7b300835f4da72460fc57fdcfd83341890a158.jpg?width=750&format=jpg&optimize=medium",
+        "alt": "",
+        "w": 750,
+        "h": 409
+      },
+      {
+        "tag": "img",
+        "src": "https://of1--frescopa26--aem-showcase.aem.page/machines/media_132718180b6190179a138b13595a42c32f51665ed.jpg?width=750&format=webply&optimize=medium",
+        "alt": "",
+        "w": 750,
+        "h": 409
+      },
+      {
+        "tag": "img",
+        "src": "https://of1--frescopa26--aem-showcase.aem.page/machines/media_132718180b6190179a138b13595a42c32f51665ed.jpg?width=750&format=webply&optimize=medium",
+        "alt": "",
+        "w": 750,
+        "h": 409
+      }
+    ]
+  },
+  {
+    "url": "https://of1--frescopa26--aem-showcase.aem.page/beverages",
+    "title": "Three ways to fill a cup.",
+    "blocks": [
+      {
+        "tag": "p",
+        "text": "BEVERAGES"
+      },
+      {
+        "tag": "h1",
+        "text": "Three ways to fill a cup."
+      },
+      {
+        "tag": "p",
+        "text": "Coffee, tea, and cold-pressed juice — each sourced carefully, made in small batches, and built for a particular kind of morning. Start with what you're pouring today."
+      },
+      {
+        "tag": "p",
+        "text": "COFFEE"
+      },
+      {
+        "tag": "h2",
+        "text": "Roasted for your ritual"
+      },
+      {
+        "tag": "p",
+        "text": "House blends built for consistency, traceable single origins for the days you want to taste a place, and premium instant for when you're in a hurry. Ground, whole bean, or pods."
+      },
+      {
+        "tag": "p",
+        "text": "Worth starting with"
+      },
+      {
+        "tag": "p",
+        "text": "Morning Blend Single Origin Ethiopian Espresso Blend"
+      },
+      {
+        "tag": "p",
+        "text": "Shop all coffee→ From $10 · 10 blends"
+      },
+      {
+        "tag": "p",
+        "text": "TEA"
+      },
+      {
+        "tag": "h2",
+        "text": "A quieter kind of cup"
+      },
+      {
+        "tag": "p",
+        "text": "Eight blends across black, green and herbal, plus a small reserve of rare leaf. Loose or in bags, in three sizes — chosen for the slow afternoon hour."
+      },
+      {
+        "tag": "p",
+        "text": "Worth starting with"
+      },
+      {
+        "tag": "p",
+        "text": "English Breakfast Green Sencha Darjeeling First Flush"
+      },
+      {
+        "tag": "p",
+        "text": "Shop all tea→ From $9 · 10 blends"
+      },
+      {
+        "tag": "p",
+        "text": "COLD-PRESS JUICE"
+      },
+      {
+        "tag": "h2",
+        "text": "Bottled bright"
+      },
+      {
+        "tag": "p",
+        "text": "Cold-pressed singles and blends, plus concentrates to mix your own. No added sugar, nothing from concentrate — just fruit and veg, pressed slow and kept cold."
+      },
+      {
+        "tag": "p",
+        "text": "Worth starting with"
+      },
+      {
+        "tag": "p",
+        "text": "Orange Green Revival Beetroot & Berry"
+      },
+      {
+        "tag": "p",
+        "text": "Shop all juice→ From $5.50 · 25 pressings"
+      },
+      {
+        "tag": "p",
+        "text": "CAN'T DECIDE?"
+      },
+      {
+        "tag": "h2",
+        "text": "Taste the whole range at a café."
+      },
+      {
+        "tag": "p",
+        "text": "Sit at the bar and work through coffee, tea and juice with our team. It's the fastest way to find your everyday cup."
+      },
+      {
+        "tag": "p",
+        "text": "Find a café→"
+      },
+      {
+        "tag": "img",
+        "src": "https://of1--frescopa26--aem-showcase.aem.page/media_132718180b6190179a138b13595a42c32f51665ed.jpg?width=2000&format=webply&optimize=medium",
+        "alt": "",
+        "w": 1408,
+        "h": 768
+      },
+      {
+        "tag": "img",
+        "src": "https://of1--frescopa26--aem-showcase.aem.page/media_126153dedaaab1e3fdd811716e201bae4bcfcf30f.jpg?width=2000&format=webply&optimize=medium",
+        "alt": "",
+        "w": 1408,
+        "h": 768
+      },
+      {
+        "tag": "img",
+        "src": "https://of1--frescopa26--aem-showcase.aem.page/media_11963a4969e9d029a1613bfbdb474e23808af40db.jpg?width=2000&format=webply&optimize=medium",
+        "alt": "",
+        "w": 1408,
+        "h": 768
+      }
+    ]
+  },
+  {
+    "url": "https://of1--frescopa26--aem-showcase.aem.page/cafe",
+    "title": "Come taste the whole of Fréscopa.",
+    "blocks": [
+      {
+        "tag": "p",
+        "text": "THE CAFÉ & SHOWROOM"
+      },
+      {
+        "tag": "h1",
+        "text": "Come taste the whole of Fréscopa."
+      },
+      {
+        "tag": "p",
+        "text": "Part coffee bar, part showroom, part gathering place. Sit with a cup, get hands-on with the machines, and stay for a class — no purchase, no pressure."
+      },
+      {
+        "tag": "p",
+        "text": "Find your nearest café→"
+      },
+      {
+        "tag": "p",
+        "text": "See what's inside"
+      },
+      {
+        "tag": "p",
+        "text": "WHY COME IN"
+      },
+      {
+        "tag": "h2",
+        "text": "Reasons to make the trip."
+      },
+      {
+        "tag": "li",
+        "text": "Taste before you commit Flight through the coffee, tea and cold-press range at the bar. Find the cup you'll want at home."
+      },
+      {
+        "tag": "h3",
+        "text": "Taste before you commit"
+      },
+      {
+        "tag": "p",
+        "text": "Flight through the coffee, tea and cold-press range at the bar. Find the cup you'll want at home."
+      },
+      {
+        "tag": "li",
+        "text": "Meet the machines Pull a shot on the Atelier line yourself. Feel the difference before it lands on your counter."
+      },
+      {
+        "tag": "h3",
+        "text": "Meet the machines"
+      },
+      {
+        "tag": "p",
+        "text": "Pull a shot on the Atelier line yourself. Feel the difference before it lands on your counter."
+      },
+      {
+        "tag": "li",
+        "text": "Learn from the team Brewing classes, latte-art labs and cuppings led by people who do it every day."
+      },
+      {
+        "tag": "h3",
+        "text": "Learn from the team"
+      },
+      {
+        "tag": "p",
+        "text": "Brewing classes, latte-art labs and cuppings led by people who do it every day."
+      },
+      {
+        "tag": "li",
+        "text": "Somewhere to linger A warm room to meet, work, or read the morning away. Come for the coffee, stay for the quiet."
+      },
+      {
+        "tag": "h3",
+        "text": "Somewhere to linger"
+      },
+      {
+        "tag": "p",
+        "text": "A warm room to meet, work, or read the morning away. Come for the coffee, stay for the quiet."
+      },
+      {
+        "tag": "p",
+        "text": "THE EXPERIENCE"
+      },
+      {
+        "tag": "h2",
+        "text": "Three rooms, one long morning."
+      },
+      {
+        "tag": "p",
+        "text": "01 · THE TASTE BAR"
+      },
+      {
+        "tag": "h3",
+        "text": "Every drink we make, poured to order."
+      },
+      {
+        "tag": "p",
+        "text": "Sit at the bar and work through the range — espresso and slow-pour coffee, loose-leaf tea, and cold-pressed juice. Our team talks you through each one and builds a tasting flight around what you like. It's the fastest way to find your everyday cup."
+      },
+      {
+        "tag": "p",
+        "text": "Browse the coffee range→"
+      },
+      {
+        "tag": "p",
+        "text": "02 · THE SHOWROOM"
+      },
+      {
+        "tag": "h3",
+        "text": "Get your hands on the whole line."
+      },
+      {
+        "tag": "p",
+        "text": "The full Atelier range is set up and running. Pull your own shot, watch the machine learn a profile, and ask the questions a spec sheet can't answer. When you're ready, we'll help you pick the one that fits your kitchen — or arrange a home delivery."
+      },
+      {
+        "tag": "p",
+        "text": "Explore the machines→"
+      },
+      {
+        "tag": "p",
+        "text": "03 · THE TABLE"
+      },
+      {
+        "tag": "h3",
+        "text": "Learn something, meet someone."
+      },
+      {
+        "tag": "p",
+        "text": "Most evenings the long table hosts something — a brewing class, a latte-art lab, a cupping, or just a slow community morning. Classes are small and hands-on, and most are free with a drink. Check what's on below and save a seat."
+      },
+      {
+        "tag": "p",
+        "text": "See what's on→"
+      },
+      {
+        "tag": "p",
+        "text": "WHAT'S ON"
+      },
+      {
+        "tag": "h2",
+        "text": "This week at the table."
+      },
+      {
+        "tag": "p",
+        "text": "Free with a drink unless noted"
+      },
+      {
+        "tag": "li",
+        "text": "TUESDAY Origins cupping Taste three single-origin lots side by side and learn to name what you taste. 6:30–7:30PM Free"
+      },
+      {
+        "tag": "p",
+        "text": "TUESDAY"
+      },
+      {
+        "tag": "h3",
+        "text": "Origins cupping"
+      },
+      {
+        "tag": "p",
+        "text": "Taste three single-origin lots side by side and learn to name what you taste."
+      },
+      {
+        "tag": "li",
+        "text": "WEDNESDAY Latte-art lab Hands-on milk steaming and pour practice on the Atelier line. Beginners welcome. 6:00–7:30PM $15"
+      },
+      {
+        "tag": "p",
+        "text": "WEDNESDAY"
+      },
+      {
+        "tag": "h3",
+        "text": "Latte-art lab"
+      },
+      {
+        "tag": "p",
+        "text": "Hands-on milk steaming and pour practice on the Atelier line. Beginners welcome."
+      },
+      {
+        "tag": "li",
+        "text": "THURSDAY Home brewing 101 Dial in grind, dose and time for a filter cup you can repeat at home. 6:30–8:00PM Free"
+      },
+      {
+        "tag": "p",
+        "text": "THURSDAY"
+      },
+      {
+        "tag": "h3",
+        "text": "Home brewing 101"
+      },
+      {
+        "tag": "p",
+        "text": "Dial in grind, dose and time for a filter cup you can repeat at home."
+      },
+      {
+        "tag": "li",
+        "text": "SATURDAY Slow morning cupping A relaxed community tasting over pastries. Drop in, no booking needed. 9:00–11:00AM Free"
+      },
+      {
+        "tag": "p",
+        "text": "SATURDAY"
+      },
+      {
+        "tag": "h3",
+        "text": "Slow morning cupping"
+      },
+      {
+        "tag": "p",
+        "text": "A relaxed community tasting over pastries. Drop in, no booking needed."
+      },
+      {
+        "tag": "p",
+        "text": "FIND US"
+      },
+      {
+        "tag": "h2",
+        "text": "There's a Fréscopa in your town."
+      },
+      {
+        "tag": "p",
+        "text": "From flagship showrooms to the café on the corner, we're probably closer than you think. Every café pours the full range — showrooms and workshop tables vary by location."
+      },
+      {
+        "tag": "li",
+        "text": "1,200+ CAFÉS NATIONWIDE"
+      },
+      {
+        "tag": "p",
+        "text": "1,200+"
+      },
+      {
+        "tag": "p",
+        "text": "CAFÉS NATIONWIDE"
+      },
+      {
+        "tag": "li",
+        "text": "190 CITIES"
+      },
+      {
+        "tag": "p",
+        "text": "190"
+      },
+      {
+        "tag": "p",
+        "text": "CITIES"
+      },
+      {
+        "tag": "li",
+        "text": "48 STATES"
+      },
+      {
+        "tag": "p",
+        "text": "STATES"
+      },
+      {
+        "tag": "li",
+        "text": "12 FLAGSHIP SHOWROOMS"
+      },
+      {
+        "tag": "p",
+        "text": "FLAGSHIP SHOWROOMS"
+      },
+      {
+        "tag": "p",
+        "text": "Flagship"
+      },
+      {
+        "tag": "p",
+        "text": "NEW YORK · SOHO"
+      },
+      {
+        "tag": "h3",
+        "text": "The Fréscopa flagship"
+      },
+      {
+        "tag": "p",
+        "text": "Our largest room: a full taste bar, the complete showroom, and a dedicated workshop table upstairs. The best place to spend an unhurried afternoon in the Fréscopa world."
+      },
+      {
+        "tag": "p",
+        "text": "Café Showroom Workshops"
+      },
+      {
+        "tag": "p",
+        "text": "112 Greene Street, New York, NY Mon–Sun · 7am–8pm"
+      },
+      {
+        "tag": "p",
+        "text": "Get directions→"
+      },
+      {
+        "tag": "p",
+        "text": "27 CAFÉS NEAR YOU"
+      },
+      {
+        "tag": "h3",
+        "text": "Fréscopa Williamsburg"
+      },
+      {
+        "tag": "p",
+        "text": "BROOKLYN, NY"
+      },
+      {
+        "tag": "p",
+        "text": "134 N 6th St, Brooklyn, NY"
+      },
+      {
+        "tag": "p",
+        "text": "CAFÉ SHOWROOM"
+      },
+      {
+        "tag": "p",
+        "text": "Mon–Sun · 7am–8pm"
+      },
+      {
+        "tag": "p",
+        "text": "Directions→"
+      },
+      {
+        "tag": "h3",
+        "text": "Fréscopa Seaport"
+      },
+      {
+        "tag": "p",
+        "text": "BOSTON, MA"
+      },
+      {
+        "tag": "p",
+        "text": "48 Harbor Way, Boston, MA"
+      },
+      {
+        "tag": "p",
+        "text": "CAFÉ SHOWROOM"
+      },
+      {
+        "tag": "p",
+        "text": "Mon–Sun · 7am–7pm"
+      },
+      {
+        "tag": "p",
+        "text": "Directions→"
+      },
+      {
+        "tag": "h3",
+        "text": "Fréscopa Back Bay"
+      },
+      {
+        "tag": "p",
+        "text": "BOSTON, MA"
+      },
+      {
+        "tag": "p",
+        "text": "221 Newbury St, Boston, MA"
+      },
+      {
+        "tag": "p",
+        "text": "CAFÉ"
+      },
+      {
+        "tag": "p",
+        "text": "Mon–Sun · 6:30am–7pm"
+      },
+      {
+        "tag": "p",
+        "text": "Directions→"
+      },
+      {
+        "tag": "h3",
+        "text": "Fréscopa Rittenhouse"
+      },
+      {
+        "tag": "p",
+        "text": "PHILADELPHIA, PA"
+      },
+      {
+        "tag": "p",
+        "text": "1820 Walnut St, Philadelphia, PA"
+      },
+      {
+        "tag": "p",
+        "text": "CAFÉ WORKSHOPS"
+      },
+      {
+        "tag": "p",
+        "text": "Mon–Sun · 7am–7pm"
+      },
+      {
+        "tag": "p",
+        "text": "Directions→"
+      },
+      {
+        "tag": "h3",
+        "text": "Fréscopa Georgetown"
+      },
+      {
+        "tag": "p",
+        "text": "WASHINGTON, DC"
+      },
+      {
+        "tag": "p",
+        "text": "3040 M St NW, Washington, DC"
+      },
+      {
+        "tag": "p",
+        "text": "CAFÉ SHOWROOM"
+      },
+      {
+        "tag": "p",
+        "text": "Mon–Sun · 7am–7pm"
+      },
+      {
+        "tag": "p",
+        "text": "Directions→"
+      },
+      {
+        "tag": "h3",
+        "text": "Fréscopa Ponce City Market"
+      },
+      {
+        "tag": "p",
+        "text": "ATLANTA, GA"
+      },
+      {
+        "tag": "p",
+        "text": "675 Ponce De Leon Ave NE, Atlanta, GA"
+      },
+      {
+        "tag": "p",
+        "text": "CAFÉ SHOWROOM WORKSHOPS"
+      },
+      {
+        "tag": "p",
+        "text": "Mon–Sun · 7am–8pm"
+      },
+      {
+        "tag": "p",
+        "text": "Directions→"
+      },
+      {
+        "tag": "h3",
+        "text": "Fréscopa West Loop"
+      },
+      {
+        "tag": "p",
+        "text": "CHICAGO, IL"
+      },
+      {
+        "tag": "p",
+        "text": "905 W Fulton Market, Chicago, IL"
+      },
+      {
+        "tag": "p",
+        "text": "CAFÉ SHOWROOM WORKSHOPS"
+      },
+      {
+        "tag": "p",
+        "text": "Mon–Sun · 7am–7pm"
+      },
+      {
+        "tag": "p",
+        "text": "Directions→"
+      },
+      {
+        "tag": "h3",
+        "text": "Fréscopa Wicker Park"
+      },
+      {
+        "tag": "p",
+        "text": "CHICAGO, IL"
+      },
+      {
+        "tag": "p",
+        "text": "1547 N Milwaukee Ave, Chicago, IL"
+      },
+      {
+        "tag": "p",
+        "text": "CAFÉ"
+      },
+      {
+        "tag": "p",
+        "text": "Mon–Sun · 6:30am–7pm"
+      },
+      {
+        "tag": "p",
+        "text": "Directions→"
+      },
+      {
+        "tag": "h3",
+        "text": "Fréscopa North Loop"
+      },
+      {
+        "tag": "p",
+        "text": "MINNEAPOLIS, MN"
+      },
+      {
+        "tag": "p",
+        "text": "215 N Washington Ave, Minneapolis, MN"
+      },
+      {
+        "tag": "p",
+        "text": "CAFÉ WORKSHOPS"
+      },
+      {
+        "tag": "p",
+        "text": "Mon–Sun · 7am–6pm"
+      },
+      {
+        "tag": "p",
+        "text": "Directions→"
+      },
+      {
+        "tag": "h3",
+        "text": "Fréscopa Crossroads"
+      },
+      {
+        "tag": "p",
+        "text": "KANSAS CITY, MO"
+      },
+      {
+        "tag": "p",
+        "text": "1801 Grand Blvd, Kansas City, MO"
+      },
+      {
+        "tag": "p",
+        "text": "CAFÉ"
+      },
+      {
+        "tag": "p",
+        "text": "Mon–Sun · 7am–6pm"
+      },
+      {
+        "tag": "p",
+        "text": "Directions→"
+      },
+      {
+        "tag": "h3",
+        "text": "Fréscopa RiNo"
+      },
+      {
+        "tag": "p",
+        "text": "DENVER, CO"
+      },
+      {
+        "tag": "p",
+        "text": "2601 Larimer St, Denver, CO"
+      },
+      {
+        "tag": "p",
+        "text": "CAFÉ SHOWROOM"
+      },
+      {
+        "tag": "p",
+        "text": "Mon–Sun · 7am–7pm"
+      },
+      {
+        "tag": "p",
+        "text": "Directions→"
+      },
+      {
+        "tag": "h3",
+        "text": "Fréscopa South Congress"
+      },
+      {
+        "tag": "p",
+        "text": "AUSTIN, TX"
+      },
+      {
+        "tag": "p",
+        "text": "1601 S Congress Ave, Austin, TX"
+      },
+      {
+        "tag": "p",
+        "text": "CAFÉ WORKSHOPS"
+      },
+      {
+        "tag": "p",
+        "text": "Mon–Sun · 7am–6pm"
+      },
+      {
+        "tag": "p",
+        "text": "Directions→"
+      },
+      {
+        "tag": "h3",
+        "text": "Fréscopa The Domain"
+      },
+      {
+        "tag": "p",
+        "text": "AUSTIN, TX"
+      },
+      {
+        "tag": "p",
+        "text": "11700 Domain Blvd, Austin, TX"
+      },
+      {
+        "tag": "p",
+        "text": "CAFÉ SHOWROOM"
+      },
+      {
+        "tag": "p",
+        "text": "Mon–Sun · 7am–8pm"
+      },
+      {
+        "tag": "p",
+        "text": "Directions→"
+      },
+      {
+        "tag": "h3",
+        "text": "Fréscopa Deep Ellum"
+      },
+      {
+        "tag": "p",
+        "text": "DALLAS, TX"
+      },
+      {
+        "tag": "p",
+        "text": "2822 Main St, Dallas, TX"
+      },
+      {
+        "tag": "p",
+        "text": "CAFÉ SHOWROOM"
+      },
+      {
+        "tag": "p",
+        "text": "Mon–Sun · 7am–7pm"
+      },
+      {
+        "tag": "p",
+        "text": "Directions→"
+      },
+      {
+        "tag": "h3",
+        "text": "Fréscopa The Heights"
+      },
+      {
+        "tag": "p",
+        "text": "HOUSTON, TX"
+      },
+      {
+        "tag": "p",
+        "text": "714 Yale St, Houston, TX"
+      },
+      {
+        "tag": "p",
+        "text": "CAFÉ"
+      },
+      {
+        "tag": "p",
+        "text": "Mon–Sun · 7am–7pm"
+      },
+      {
+        "tag": "p",
+        "text": "Directions→"
+      },
+      {
+        "tag": "h3",
+        "text": "Fréscopa Wynwood"
+      },
+      {
+        "tag": "p",
+        "text": "MIAMI, FL"
+      },
+      {
+        "tag": "p",
+        "text": "2750 NW 3rd Ave, Miami, FL"
+      },
+      {
+        "tag": "p",
+        "text": "CAFÉ SHOWROOM WORKSHOPS"
+      },
+      {
+        "tag": "p",
+        "text": "Mon–Sun · 7am–9pm"
+      },
+      {
+        "tag": "p",
+        "text": "Directions→"
+      },
+      {
+        "tag": "h3",
+        "text": "Fréscopa Warehouse District"
+      },
+      {
+        "tag": "p",
+        "text": "NEW ORLEANS, LA"
+      },
+      {
+        "tag": "p",
+        "text": "640 Julia St, New Orleans, LA"
+      },
+      {
+        "tag": "p",
+        "text": "CAFÉ WORKSHOPS"
+      },
+      {
+        "tag": "p",
+        "text": "Mon–Sun · 7am–7pm"
+      },
+      {
+        "tag": "p",
+        "text": "Directions→"
+      },
+      {
+        "tag": "h3",
+        "text": "Fréscopa Ferry Building"
+      },
+      {
+        "tag": "p",
+        "text": "SAN FRANCISCO, CA"
+      },
+      {
+        "tag": "p",
+        "text": "1 Ferry Building, San Francisco, CA"
+      },
+      {
+        "tag": "p",
+        "text": "CAFÉ SHOWROOM"
+      },
+      {
+        "tag": "p",
+        "text": "Mon–Sun · 7am–7pm"
+      },
+      {
+        "tag": "p",
+        "text": "Directions→"
+      },
+      {
+        "tag": "h3",
+        "text": "Fréscopa Hayes Valley"
+      },
+      {
+        "tag": "p",
+        "text": "SAN FRANCISCO, CA"
+      },
+      {
+        "tag": "p",
+        "text": "556 Hayes St, San Francisco, CA"
+      },
+      {
+        "tag": "p",
+        "text": "CAFÉ"
+      },
+      {
+        "tag": "p",
+        "text": "Mon–Sun · 6:30am–7pm"
+      },
+      {
+        "tag": "p",
+        "text": "Directions→"
+      },
+      {
+        "tag": "h3",
+        "text": "Fréscopa Capitol Hill"
+      },
+      {
+        "tag": "p",
+        "text": "SEATTLE, WA"
+      },
+      {
+        "tag": "p",
+        "text": "520 E Pine St, Seattle, WA"
+      },
+      {
+        "tag": "p",
+        "text": "CAFÉ WORKSHOPS"
+      },
+      {
+        "tag": "p",
+        "text": "Mon–Sun · 6:30am–7pm"
+      },
+      {
+        "tag": "p",
+        "text": "Directions→"
+      },
+      {
+        "tag": "h3",
+        "text": "Fréscopa Ballard"
+      },
+      {
+        "tag": "p",
+        "text": "SEATTLE, WA"
+      },
+      {
+        "tag": "p",
+        "text": "5405 Ballard Ave NW, Seattle, WA"
+      },
+      {
+        "tag": "p",
+        "text": "CAFÉ SHOWROOM"
+      },
+      {
+        "tag": "p",
+        "text": "Mon–Sun · 7am–7pm"
+      },
+      {
+        "tag": "p",
+        "text": "Directions→"
+      },
+      {
+        "tag": "h3",
+        "text": "Fréscopa Pearl District"
+      },
+      {
+        "tag": "p",
+        "text": "PORTLAND, OR"
+      },
+      {
+        "tag": "p",
+        "text": "1130 NW Everett St, Portland, OR"
+      },
+      {
+        "tag": "p",
+        "text": "CAFÉ WORKSHOPS"
+      },
+      {
+        "tag": "p",
+        "text": "Mon–Sun · 7am–7pm"
+      },
+      {
+        "tag": "p",
+        "text": "Directions→"
+      },
+      {
+        "tag": "h3",
+        "text": "Fréscopa Arts District"
+      },
+      {
+        "tag": "p",
+        "text": "LOS ANGELES, CA"
+      },
+      {
+        "tag": "p",
+        "text": "720 E 3rd St, Los Angeles, CA"
+      },
+      {
+        "tag": "p",
+        "text": "CAFÉ SHOWROOM WORKSHOPS"
+      },
+      {
+        "tag": "p",
+        "text": "Mon–Sun · 7am–8pm"
+      },
+      {
+        "tag": "p",
+        "text": "Directions→"
+      },
+      {
+        "tag": "h3",
+        "text": "Fréscopa Silver Lake"
+      },
+      {
+        "tag": "p",
+        "text": "LOS ANGELES, CA"
+      },
+      {
+        "tag": "p",
+        "text": "2909 Sunset Blvd, Los Angeles, CA"
+      },
+      {
+        "tag": "p",
+        "text": "CAFÉ"
+      },
+      {
+        "tag": "p",
+        "text": "Mon–Sun · 6:30am–8pm"
+      },
+      {
+        "tag": "p",
+        "text": "Directions→"
+      },
+      {
+        "tag": "h3",
+        "text": "Fréscopa Little Italy"
+      },
+      {
+        "tag": "p",
+        "text": "SAN DIEGO, CA"
+      },
+      {
+        "tag": "p",
+        "text": "1660 India St, San Diego, CA"
+      },
+      {
+        "tag": "p",
+        "text": "CAFÉ SHOWROOM"
+      },
+      {
+        "tag": "p",
+        "text": "Mon–Sun · 7am–7pm"
+      },
+      {
+        "tag": "p",
+        "text": "Directions→"
+      },
+      {
+        "tag": "h3",
+        "text": "Fréscopa Roosevelt Row"
+      },
+      {
+        "tag": "p",
+        "text": "PHOENIX, AZ"
+      },
+      {
+        "tag": "p",
+        "text": "814 N 2nd St, Phoenix, AZ"
+      },
+      {
+        "tag": "p",
+        "text": "CAFÉ"
+      },
+      {
+        "tag": "p",
+        "text": "Mon–Sun · 7am–7pm"
+      },
+      {
+        "tag": "p",
+        "text": "Directions→"
+      },
+      {
+        "tag": "h3",
+        "text": "Fréscopa Sydney"
+      },
+      {
+        "tag": "p",
+        "text": "SYDNEY, NSW"
+      },
+      {
+        "tag": "p",
+        "text": "201 Sussex St, Sydney, NSW, Australia"
+      },
+      {
+        "tag": "p",
+        "text": "CAFÉ SHOWROOM"
+      },
+      {
+        "tag": "p",
+        "text": "Mon–Sun · 7am–7pm"
+      },
+      {
+        "tag": "p",
+        "text": "Directions→"
+      },
+      {
+        "tag": "p",
+        "text": "BOOK AN ATELIER TOUR"
+      },
+      {
+        "tag": "h2",
+        "text": "A guided hour with the machine that learns you."
+      },
+      {
+        "tag": "p",
+        "text": "Book a free, 45-minute private tour at any showroom café. A specialist walks you through the Atelier line, dials a shot to your taste, and answers everything a spec sheet can't. No obligation to buy."
+      },
+      {
+        "tag": "li",
+        "text": "→ 45 minutes, one-to-one with a specialist"
+      },
+      {
+        "tag": "li",
+        "text": "→ Taste the full range, dialled to your palate"
+      },
+      {
+        "tag": "li",
+        "text": "→ Free, and yours to book whenever suits"
+      },
+      {
+        "tag": "p",
+        "text": "We'll confirm by email within one business day. No payment needed to book."
+      },
+      {
+        "tag": "p",
+        "text": "COME SAY HELLO"
+      },
+      {
+        "tag": "h2",
+        "text": "The kettle's on. The door's open."
+      },
+      {
+        "tag": "p",
+        "text": "No appointment, no pressure — just a good cup and a warm room. We'd love to see you."
+      },
+      {
+        "tag": "p",
+        "text": "Find a café→"
+      },
+      {
+        "tag": "p",
+        "text": "Book an Atelier tour"
+      },
+      {
+        "tag": "img",
+        "src": "https://of1--frescopa26--aem-showcase.aem.page/media_1ae7b300835f4da72460fc57fdcfd83341890a158.jpg?width=2000&format=webply&optimize=medium",
+        "alt": "",
+        "w": 1408,
+        "h": 768
+      },
+      {
+        "tag": "img",
+        "src": "https://of1--frescopa26--aem-showcase.aem.page/media_132718180b6190179a138b13595a42c32f51665ed.jpg?width=2000&format=webply&optimize=medium",
+        "alt": "",
+        "w": 1408,
+        "h": 768
+      },
+      {
+        "tag": "img",
+        "src": "https://of1--frescopa26--aem-showcase.aem.page/media_1ae7b300835f4da72460fc57fdcfd83341890a158.jpg?width=2000&format=webply&optimize=medium",
+        "alt": "",
+        "w": 1408,
+        "h": 768
+      },
+      {
+        "tag": "img",
+        "src": "https://a.tile.openstreetmap.org/4/3/6.png",
+        "alt": "",
+        "w": 256,
+        "h": 256
+      },
+      {
+        "tag": "img",
+        "src": "https://c.tile.openstreetmap.org/4/3/5.png",
+        "alt": "",
+        "w": 256,
+        "h": 256
+      },
+      {
+        "tag": "img",
+        "src": "https://b.tile.openstreetmap.org/4/2/5.png",
+        "alt": "",
+        "w": 256,
+        "h": 256
+      },
+      {
+        "tag": "img",
+        "src": "https://a.tile.openstreetmap.org/4/4/5.png",
+        "alt": "",
+        "w": 256,
+        "h": 256
+      },
+      {
+        "tag": "img",
+        "src": "https://c.tile.openstreetmap.org/4/2/6.png",
+        "alt": "",
+        "w": 256,
+        "h": 256
+      },
+      {
+        "tag": "img",
+        "src": "https://b.tile.openstreetmap.org/4/4/6.png",
+        "alt": "",
+        "w": 256,
+        "h": 256
+      },
+      {
+        "tag": "img",
+        "src": "https://b.tile.openstreetmap.org/4/3/4.png",
+        "alt": "",
+        "w": 256,
+        "h": 256
+      },
+      {
+        "tag": "img",
+        "src": "https://b.tile.openstreetmap.org/4/3/7.png",
+        "alt": "",
+        "w": 256,
+        "h": 256
+      },
+      {
+        "tag": "img",
+        "src": "https://a.tile.openstreetmap.org/4/2/4.png",
+        "alt": "",
+        "w": 256,
+        "h": 256
+      },
+      {
+        "tag": "img",
+        "src": "https://c.tile.openstreetmap.org/4/4/4.png",
+        "alt": "",
+        "w": 256,
+        "h": 256
+      },
+      {
+        "tag": "img",
+        "src": "https://a.tile.openstreetmap.org/4/2/7.png",
+        "alt": "",
+        "w": 256,
+        "h": 256
+      },
+      {
+        "tag": "img",
+        "src": "https://c.tile.openstreetmap.org/4/4/7.png",
+        "alt": "",
+        "w": 256,
+        "h": 256
+      }
+    ]
+  },
+  {
+    "url": "https://of1--frescopa26--aem-showcase.aem.page/japan",
+    "title": "フレスコパ、東京にやってきます。",
+    "blocks": [
+      {
+        "tag": "p",
+        "text": "まもなくオープン · 東京"
+      },
+      {
+        "tag": "h1",
+        "text": "フレスコパ、東京にやってきます。"
+      },
+      {
+        "tag": "p",
+        "text": "日本初のカフェが、この春、表参道にオープン。テイスティングバー。フル装備のアトリエ・ショールーム。そして、クラスやゆったりとした朝を過ごすための長いテーブル。"
+      },
+      {
+        "tag": "p",
+        "text": "変わらぬ豆は、生産者ファーストでフェアに取引されたもの。明治神宮前から歩いてすぐの場所に。"
+      },
+      {
+        "tag": "p",
+        "text": "来店を計画する→"
+      },
+      {
+        "tag": "p",
+        "text": "オープン情報を見る"
+      },
+      {
+        "tag": "p",
+        "text": "ぜひお立ち寄りを"
+      },
+      {
+        "tag": "h2",
+        "text": "味わい、学び、くつろぐ新しい空間。"
+      },
+      {
+        "tag": "li",
+        "text": "すべてのラインナップを味わう エスプレッソ、スロープアコーヒー、リーフティー、コールドプレス — バーでオーダーごとにお淹れします。あなたの毎日の一杯を見つけて。"
+      },
+      {
+        "tag": "h3",
+        "text": "すべてのラインナップを味わう"
+      },
+      {
+        "tag": "p",
+        "text": "エスプレッソ、スロープアコーヒー、リーフティー、コールドプレス — バーでオーダーごとにお淹れします。あなたの毎日の一杯を見つけて。"
+      },
+      {
+        "tag": "li",
+        "text": "マシンに触れる フル装備のショールームで自らショットを抽出。ご自宅のカウンターに届く前に、その違いを体感してください。"
+      },
+      {
+        "tag": "h3",
+        "text": "マシンに触れる"
+      },
+      {
+        "tag": "p",
+        "text": "フル装備のショールームで自らショットを抽出。ご自宅のカウンターに届く前に、その違いを体感してください。"
+      },
+      {
+        "tag": "li",
+        "text": "スタッフから学ぶ 毎日それを実践するプロが導く抽出クラス、ラテアートラボ、カッピング — 多くはドリンク付きで無料。"
+      },
+      {
+        "tag": "h3",
+        "text": "スタッフから学ぶ"
+      },
+      {
+        "tag": "p",
+        "text": "毎日それを実践するプロが導く抽出クラス、ラテアートラボ、カッピング — 多くはドリンク付きで無料。"
+      },
+      {
+        "tag": "li",
+        "text": "くつろげる場所 人と会い、仕事をし、朝をゆっくり読書して過ごす、暖かく静かな空間 — 表参道の中心に。長く使える製品を、責任ある調達で。"
+      },
+      {
+        "tag": "h3",
+        "text": "くつろげる場所"
+      },
+      {
+        "tag": "p",
+        "text": "人と会い、仕事をし、朝をゆっくり読書して過ごす、暖かく静かな空間 — 表参道の中心に。長く使える製品を、責任ある調達で。"
+      },
+      {
+        "tag": "p",
+        "text": "オープン"
+      },
+      {
+        "tag": "h2",
+        "text": "表参道、オープン当日。"
+      },
+      {
+        "tag": "p",
+        "text": "01 · グランドオープン"
+      },
+      {
+        "tag": "h3",
+        "text": "4月11日（土）オープン。"
+      },
+      {
+        "tag": "p",
+        "text": "東京での最初の朝、午前8時よりお迎えします。先着100名様にフレスコパ・ウェルカムキットをプレゼント。終日、テイスティングフライトを無料でご提供。予約不要 — ぜひお気軽にお立ち寄りください。"
+      },
+      {
+        "tag": "p",
+        "text": "アクセスを見る→"
+      },
+      {
+        "tag": "p",
+        "text": "02 · ショールーム"
+      },
+      {
+        "tag": "h3",
+        "text": "アトリエ全ラインナップを、その場で。"
+      },
+      {
+        "tag": "p",
+        "text": "東京のショールームには、アトリエの全レンジを取り揃えています。自らショットを抽出し、マシンがプロファイルを学習する様子を見て、スペック表では分からない疑問をぶつけてください。ご準備ができたら、あなたのキッチンに合う一台選びをお手伝いします — 日本全国へお届け可能。"
+      },
+      {
+        "tag": "p",
+        "text": "マシンを見る→"
+      },
+      {
+        "tag": "p",
+        "text": "オープン週"
+      },
+      {
+        "tag": "h2",
+        "text": "今週の東京のテーブルにて。"
+      },
+      {
+        "tag": "p",
+        "text": "特記なき限りドリンク付きで無料"
+      },
+      {
+        "tag": "li",
+        "text": "土曜 グランドオープン・カッピング オープニングのラインナップを飲み比べ、味わいを言葉にする方法を学びます。 10:00–11:30 無料"
+      },
+      {
+        "tag": "h3",
+        "text": "グランドオープン・カッピング"
+      },
+      {
+        "tag": "p",
+        "text": "オープニングのラインナップを飲み比べ、味わいを言葉にする方法を学びます。"
+      },
+      {
+        "tag": "li",
+        "text": "日曜 ラテアートラボ アトリエ・ラインで実践するミルクスチーミングと注ぎの練習。初心者歓迎。 14:00–15:30 ¥2,000"
+      },
+      {
+        "tag": "h3",
+        "text": "ラテアートラボ"
+      },
+      {
+        "tag": "p",
+        "text": "アトリエ・ラインで実践するミルクスチーミングと注ぎの練習。初心者歓迎。"
+      },
+      {
+        "tag": "li",
+        "text": "水曜 ホームブリューイング101 挽き目、分量、時間を調整し、自宅で再現できる一杯を。 18:30–20:00 無料"
+      },
+      {
+        "tag": "h3",
+        "text": "ホームブリューイング101"
+      },
+      {
+        "tag": "p",
+        "text": "挽き目、分量、時間を調整し、自宅で再現できる一杯を。"
+      },
+      {
+        "tag": "li",
+        "text": "土曜 スローモーニング・カッピング ペストリーと共に楽しむ、ゆったりしたコミュニティ・テイスティング。予約不要、お気軽にどうぞ。 9:00–11:00 無料"
+      },
+      {
+        "tag": "h3",
+        "text": "スローモーニング・カッピング"
+      },
+      {
+        "tag": "p",
+        "text": "ペストリーと共に楽しむ、ゆったりしたコミュニティ・テイスティング。予約不要、お気軽にどうぞ。"
+      },
+      {
+        "tag": "p",
+        "text": "アクセス"
+      },
+      {
+        "tag": "h2",
+        "text": "フレスコパ表参道。"
+      },
+      {
+        "tag": "p",
+        "text": "日本初の拠点は、表参道と明治神宮前の間、どちらの駅からも数分の場所にあります。全ラインナップを毎日ご提供し、ショールームとワークショップテーブルも一週間を通してご利用いただけます。"
+      },
+      {
+        "tag": "p",
+        "text": "1 CAFÉ NEAR YOU"
+      },
+      {
+        "tag": "h3",
+        "text": "フレスコパ表参道"
+      },
+      {
+        "tag": "p",
+        "text": "東京都渋谷区"
+      },
+      {
+        "tag": "p",
+        "text": "東京都渋谷区神宮前4-12-10"
+      },
+      {
+        "tag": "p",
+        "text": "カフェ ショールーム ワークショップ"
+      },
+      {
+        "tag": "p",
+        "text": "月〜日 · 8:00〜20:00"
+      },
+      {
+        "tag": "p",
+        "text": "アクセス→"
+      },
+      {
+        "tag": "p",
+        "text": "ぜひご挨拶に"
+      },
+      {
+        "tag": "h2",
+        "text": "お湯を沸かしてお待ちしています。東京、扉は開いています。"
+      },
+      {
+        "tag": "p",
+        "text": "予約も気負いも不要 — おいしい一杯と暖かな空間があるだけ。オープン当日、皆さまのお越しを心よりお待ちしています。"
+      },
+      {
+        "tag": "p",
+        "text": "カフェを探す→"
+      },
+      {
+        "tag": "img",
+        "src": "https://of1--frescopa26--aem-showcase.aem.page/media_1ae7b300835f4da72460fc57fdcfd83341890a158.jpg?width=2000&format=webply&optimize=medium",
+        "alt": "",
+        "w": 1408,
+        "h": 768
+      },
+      {
+        "tag": "img",
+        "src": "https://a.tile.openstreetmap.org/4/3/6.png",
+        "alt": "",
+        "w": 256,
+        "h": 256
+      },
+      {
+        "tag": "img",
+        "src": "https://c.tile.openstreetmap.org/4/3/5.png",
+        "alt": "",
+        "w": 256,
+        "h": 256
+      },
+      {
+        "tag": "img",
+        "src": "https://b.tile.openstreetmap.org/4/2/5.png",
+        "alt": "",
+        "w": 256,
+        "h": 256
+      },
+      {
+        "tag": "img",
+        "src": "https://a.tile.openstreetmap.org/4/4/5.png",
+        "alt": "",
+        "w": 256,
+        "h": 256
+      },
+      {
+        "tag": "img",
+        "src": "https://c.tile.openstreetmap.org/4/2/6.png",
+        "alt": "",
+        "w": 256,
+        "h": 256
+      },
+      {
+        "tag": "img",
+        "src": "https://b.tile.openstreetmap.org/4/4/6.png",
+        "alt": "",
+        "w": 256,
+        "h": 256
+      },
+      {
+        "tag": "img",
+        "src": "https://b.tile.openstreetmap.org/4/3/4.png",
+        "alt": "",
+        "w": 256,
+        "h": 256
+      },
+      {
+        "tag": "img",
+        "src": "https://b.tile.openstreetmap.org/4/3/7.png",
+        "alt": "",
+        "w": 256,
+        "h": 256
+      },
+      {
+        "tag": "img",
+        "src": "https://a.tile.openstreetmap.org/4/2/4.png",
+        "alt": "",
+        "w": 256,
+        "h": 256
+      },
+      {
+        "tag": "img",
+        "src": "https://c.tile.openstreetmap.org/4/4/4.png",
+        "alt": "",
+        "w": 256,
+        "h": 256
+      },
+      {
+        "tag": "img",
+        "src": "https://a.tile.openstreetmap.org/4/2/7.png",
+        "alt": "",
+        "w": 256,
+        "h": 256
+      },
+      {
+        "tag": "img",
+        "src": "https://c.tile.openstreetmap.org/4/4/7.png",
+        "alt": "",
+        "w": 256,
+        "h": 256
+      }
+    ]
+  }
+]

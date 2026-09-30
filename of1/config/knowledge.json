@@ -1,0 +1,504 @@
+[
+  {
+    "id": "the-atelier",
+    "type": "product",
+    "title": "The Atelier",
+    "description": "Intelligent bean-to-cup espresso machine that learns individual taste preferences and adapts daily based on time, calendar, weather, and household patterns.",
+    "keywords": [
+      "intelligent coffee machine",
+      "bean to cup",
+      "ai coffee",
+      "smart espresso",
+      "personalized coffee",
+      "atelier",
+      "premium machine",
+      "automatic espresso"
+    ],
+    "facts": [
+      "Price: $2,199 (or $184/month for 12 months)",
+      "Category: Bean-to-cup coffee machine",
+      "Rating: 4.8/5 from 214 verified reviews",
+      "Learns your taste preferences over 7 days by tracking grind size, water flow, strength, and temperature",
+      "Supports up to 6 household members with individual flavor profiles",
+      "Integrates with your calendar to adjust beverage suggestions based on schedule and weather",
+      "Automatically monitors bean hopper and reorders beans before you run out",
+      "Quiet operation at 58 dB grinding noise",
+      "Dimensions: 32 × 24 × 41 cm; weighs 9.8 kg",
+      "Materials: Anodised aluminium with oak trim",
+      "Available in three finishes: Cream, Charcoal, and Terracotta",
+      "1.8L removable water tank, 250g bean hopper capacity",
+      "15 bar pump pressure for professional-quality extraction",
+      "Wi-Fi (2.4/5 GHz) and Bluetooth 5.0 connectivity",
+      "Makes espresso, filter coffee, long black, cappuccino, latte, and tea",
+      "Includes 30-night trial period with free returns and 2-year warranty",
+      "Free delivery in 3-5 business days with included setup"
+    ],
+    "images": [
+      "https://of1--frescopa26--aem-showcase.aem.page/media/product-the-atelier-1.jpg",
+      "https://of1--frescopa26--aem-showcase.aem.page/media/product-the-atelier-2.jpg",
+      "https://of1--frescopa26--aem-showcase.aem.page/media/product-the-atelier-3.jpg",
+      "https://of1--frescopa26--aem-showcase.aem.page/media/product-the-atelier-4.jpg"
+    ],
+    "persona": "quality-seeker"
+  },
+  {
+    "id": "the-atelier-mini",
+    "type": "product",
+    "title": "The Atelier Mini",
+    "description": "Compact version of The Atelier with identical intelligent technology designed for smaller spaces.",
+    "keywords": [
+      "compact coffee machine",
+      "small espresso",
+      "apartment machine",
+      "mini atelier",
+      "space saving",
+      "intelligent coffee"
+    ],
+    "facts": [
+      "Price: $799",
+      "Category: Bean-to-cup coffee machine",
+      "Compact design for smaller kitchens and spaces",
+      "Features the same intelligent learning technology as The Atelier",
+      "Adapts to your taste preferences automatically",
+      "Perfect for apartments, offices, or smaller households"
+    ],
+    "images": [
+      "https://of1--frescopa26--aem-showcase.aem.page/media/product-the-atelier-mini-1.png",
+      "https://of1--frescopa26--aem-showcase.aem.page/media/product-the-atelier-mini-2.png",
+      "https://of1--frescopa26--aem-showcase.aem.page/media/product-the-atelier-mini-3.png",
+      "https://of1--frescopa26--aem-showcase.aem.page/media/product-the-atelier-mini-4.png"
+    ],
+    "persona": "practical-enthusiast"
+  },
+  {
+    "id": "the-barista",
+    "type": "product",
+    "title": "The Barista",
+    "description": "A hands-on espresso machine for the morning ritualist who values manual control and tactile operation.",
+    "keywords": [
+      "manual espresso",
+      "hands on coffee",
+      "espresso machine",
+      "barista machine",
+      "coffee ritual",
+      "manual control"
+    ],
+    "facts": [
+      "Price: $899",
+      "Category: Espresso machine",
+      "Full manual control for coffee enthusiasts",
+      "Precise and tactile operation",
+      "Perfect for those who enjoy the ritual of making coffee",
+      "Professional-grade components for café-quality espresso at home"
+    ],
+    "images": [
+      "https://of1--frescopa26--aem-showcase.aem.page/media/product-the-barista-1.png",
+      "https://of1--frescopa26--aem-showcase.aem.page/media/product-the-barista-2.png",
+      "https://of1--frescopa26--aem-showcase.aem.page/media/product-the-barista-3.png",
+      "https://of1--frescopa26--aem-showcase.aem.page/media/product-the-barista-4.png"
+    ],
+    "persona": "hands-on-craftsperson"
+  },
+  {
+    "id": "the-everyday",
+    "type": "product",
+    "title": "The Everyday",
+    "description": "Honest espresso, every single morning. A reliable, straightforward espresso machine without complexity.",
+    "keywords": [
+      "simple espresso",
+      "daily coffee",
+      "everyday machine",
+      "reliable espresso",
+      "straightforward",
+      "basic espresso"
+    ],
+    "facts": [
+      "Price: $499",
+      "Category: Espresso machine",
+      "Straightforward operation without unnecessary features",
+      "Consistent, quality espresso every time",
+      "Perfect for busy mornings",
+      "Affordable entry into quality home espresso"
+    ],
+    "images": [
+      "https://of1--frescopa26--aem-showcase.aem.page/media/product-the-everyday-1.png",
+      "https://of1--frescopa26--aem-showcase.aem.page/media/product-the-everyday-2.png",
+      "https://of1--frescopa26--aem-showcase.aem.page/media/product-the-everyday-3.png",
+      "https://of1--frescopa26--aem-showcase.aem.page/media/product-the-everyday-4.png"
+    ],
+    "persona": "practical-enthusiast"
+  },
+  {
+    "id": "the-slow-pour",
+    "type": "product",
+    "title": "The Slow Pour",
+    "description": "Filter coffee, unhurried and beautifully even. Perfect for those who appreciate the slower ritual of pour-over.",
+    "keywords": [
+      "filter coffee",
+      "pour over",
+      "slow coffee",
+      "drip coffee",
+      "morning ritual",
+      "gentle brewing"
+    ],
+    "facts": [
+      "Price: $279",
+      "Category: Filter coffee maker",
+      "Even saturation for consistent extraction",
+      "Gentle timing produces beautifully balanced filter coffee",
+      "Perfect for a slow morning ritual",
+      "Designed for coffee lovers who prefer the pour-over method"
+    ],
+    "images": [
+      "https://of1--frescopa26--aem-showcase.aem.page/media/product-the-slow-pour-1.png",
+      "https://of1--frescopa26--aem-showcase.aem.page/media/product-the-slow-pour-2.png",
+      "https://of1--frescopa26--aem-showcase.aem.page/media/product-the-slow-pour-3.png",
+      "https://of1--frescopa26--aem-showcase.aem.page/media/product-the-slow-pour-4.png"
+    ],
+    "persona": "mindful-ritualist"
+  },
+  {
+    "id": "the-carafe",
+    "type": "product",
+    "title": "The Carafe",
+    "description": "Smooth cold brew, ready and waiting by morning. Overnight steeping creates perfectly balanced cold coffee.",
+    "keywords": [
+      "cold brew",
+      "cold coffee",
+      "overnight coffee",
+      "summer coffee",
+      "smooth coffee",
+      "refrigerator coffee"
+    ],
+    "facts": [
+      "Price: $179",
+      "Category: Cold brew maker",
+      "Overnight steeping for smooth, low-acid cold brew",
+      "Ready to pour straight from the refrigerator",
+      "Perfect for warm weather and iced coffee lovers",
+      "Simple setup the night before for effortless morning coffee"
+    ],
+    "images": [
+      "https://of1--frescopa26--aem-showcase.aem.page/media/product-the-carafe-1.png",
+      "https://of1--frescopa26--aem-showcase.aem.page/media/product-the-carafe-2.png",
+      "https://of1--frescopa26--aem-showcase.aem.page/media/product-the-carafe-3.png",
+      "https://of1--frescopa26--aem-showcase.aem.page/media/product-the-carafe-4.png"
+    ],
+    "persona": "practical-enthusiast"
+  },
+  {
+    "id": "morning-blend-coffee",
+    "type": "product",
+    "title": "Morning Blend Coffee",
+    "description": "House blends built for consistency. Available in ground, whole bean, or pods.",
+    "keywords": [
+      "morning coffee",
+      "house blend",
+      "daily coffee",
+      "coffee beans",
+      "ground coffee",
+      "coffee pods"
+    ],
+    "facts": [
+      "Price: From $10",
+      "Category: Coffee",
+      "Consistent, reliable blend perfect for daily brewing",
+      "Available as ground coffee, whole beans, or pods",
+      "Sourced and roasted for balanced flavor",
+      "Part of a collection of 10 coffee blends"
+    ],
+    "images": [],
+    "persona": "practical-enthusiast"
+  },
+  {
+    "id": "single-origin-ethiopian",
+    "type": "product",
+    "title": "Single Origin Ethiopian Coffee",
+    "description": "Traceable single origin coffee with bright, fruity notes characteristic of Ethiopian beans.",
+    "keywords": [
+      "single origin",
+      "ethiopian coffee",
+      "specialty coffee",
+      "traceable coffee",
+      "fruity coffee"
+    ],
+    "facts": [
+      "Price: From $10",
+      "Category: Coffee",
+      "Single origin from Ethiopia",
+      "Fully traceable from farm to cup",
+      "Bright and fruity flavor profile",
+      "Perfect for those who appreciate origin-specific characteristics"
+    ],
+    "images": [],
+    "persona": "quality-seeker"
+  },
+  {
+    "id": "english-breakfast-tea",
+    "type": "product",
+    "title": "English Breakfast Tea",
+    "description": "Classic black tea blend, robust and full-bodied. Part of a collection of eight tea blends.",
+    "keywords": [
+      "black tea",
+      "english breakfast",
+      "morning tea",
+      "traditional tea",
+      "breakfast tea"
+    ],
+    "facts": [
+      "Price: From $9",
+      "Category: Tea",
+      "Classic English Breakfast blend",
+      "Robust and full-bodied flavor",
+      "Available loose or bagged in three sizes",
+      "Part of a collection of 10 tea blends across black, green, and herbal varieties"
+    ],
+    "images": [],
+    "persona": "mindful-ritualist"
+  },
+  {
+    "id": "cold-pressed-citrus",
+    "type": "product",
+    "title": "Cold-Pressed Citrus Juice",
+    "description": "Three oranges, one grapefruit, and a whisper of ginger. Bright enough to wake a room.",
+    "keywords": [
+      "cold pressed juice",
+      "citrus juice",
+      "orange juice",
+      "fresh juice",
+      "morning juice"
+    ],
+    "facts": [
+      "Price: From $5.50",
+      "Category: Cold-pressed juice",
+      "Made from three oranges and one grapefruit with a hint of ginger",
+      "No added sugar, nothing from concentrate",
+      "Part of a collection of 25 cold-pressed juices",
+      "Fresh, bright flavor perfect for mornings"
+    ],
+    "images": [],
+    "persona": "health-conscious-starter"
+  },
+  {
+    "id": "cafe-experience",
+    "type": "feature",
+    "title": "Fréscopa Café & Showroom",
+    "description": "Visit 1,200+ locations across 48 states to taste beverages, test machines, and attend free classes.",
+    "keywords": [
+      "cafe",
+      "showroom",
+      "coffee shop",
+      "taste bar",
+      "coffee classes",
+      "latte art",
+      "brewing workshop",
+      "visit"
+    ],
+    "facts": [
+      "1,200+ café locations across 48 states",
+      "12 flagship showrooms in major cities including New York, LA, San Francisco, and Chicago",
+      "Free taste bar to sample espresso, pour-over, tea, and cold-pressed juice",
+      "Fully operational Atelier machines for hands-on testing",
+      "Free 45-minute private Atelier tours with specialists",
+      "Regular educational classes: origins cuppings, latte-art labs, home brewing workshops",
+      "Most classes free with beverage purchase",
+      "Typical hours: 7am–7pm or 7am–8pm daily",
+      "No purchase required to visit, test machines, or ask questions"
+    ],
+    "images": [],
+    "persona": "experiential-explorer"
+  },
+  {
+    "id": "myatelier-service",
+    "type": "feature",
+    "title": "MyAtelier Service",
+    "description": "Online account service to set up your Atelier, manage supplies, and monitor your machine remotely.",
+    "keywords": [
+      "myatelier",
+      "machine management",
+      "coffee supplies",
+      "remote monitoring",
+      "atelier app",
+      "account service"
+    ],
+    "facts": [
+      "Set up and configure your Atelier machine remotely",
+      "Manage coffee bean and supply reordering",
+      "Monitor machine status and performance",
+      "Access with email login from any device",
+      "Integrated with The Atelier's automatic reordering system"
+    ],
+    "images": [],
+    "persona": "quality-seeker"
+  },
+  {
+    "id": "japan-opening",
+    "type": "feature",
+    "title": "Tokyo Flagship Opening",
+    "description": "First Japanese location opening in Oshiomando district this spring with café, tasting bar, and showroom.",
+    "keywords": [
+      "tokyo",
+      "japan",
+      "flagship",
+      "opening",
+      "omotesando",
+      "new location",
+      "japanese cafe"
+    ],
+    "facts": [
+      "Location: Oshiomando district, Tokyo (between Omotesando and Meiji-Jingumae stations)",
+      "Grand opening: April 11, 8:00 AM",
+      "First 100 guests receive complimentary welcome kits",
+      "Free tasting flights throughout opening day",
+      "Hours: 8:00 AM–8:00 PM daily",
+      "Features: café, complete showroom, and workshop table",
+      "Inaugural week includes free coffee tasting and home brewing classes",
+      "Paid latte art workshop available (¥2,000)",
+      "Nationwide delivery available after in-store consultation"
+    ],
+    "images": [],
+    "persona": "experiential-explorer"
+  },
+  {
+    "id": "faq-machine-learning",
+    "type": "faq",
+    "title": "How does The Atelier learn my preferences?",
+    "description": "The Atelier tracks your adjustments over 7 days, monitoring grind size, water flow, strength, and temperature to build your personal taste profile.",
+    "keywords": [
+      "how does it learn",
+      "machine learning",
+      "taste profile",
+      "personalization",
+      "ai coffee"
+    ],
+    "facts": [
+      "The Atelier tracks grind size, water flow, strength, and temperature across approximately 7 days",
+      "It builds individual flavor profiles for up to 6 household members",
+      "The machine adapts automatically without requiring manual programming",
+      "Your taste profile improves the longer you use the machine"
+    ],
+    "images": []
+  },
+  {
+    "id": "faq-calendar-integration",
+    "type": "faq",
+    "title": "What does calendar integration do?",
+    "description": "The Atelier connects to your calendar to adjust beverage timing and strength based on your schedule and the weather.",
+    "keywords": [
+      "calendar",
+      "schedule",
+      "integration",
+      "smart features",
+      "timing"
+    ],
+    "facts": [
+      "Integrates with your calendar to understand your daily schedule",
+      "Adjusts beverage suggestions based on time of day and your availability",
+      "Considers weather conditions when making recommendations",
+      "Warms up before you typically make coffee",
+      "Can suggest gentler drinks for slower mornings or stronger options for busy days"
+    ],
+    "images": []
+  },
+  {
+    "id": "faq-auto-reordering",
+    "type": "faq",
+    "title": "How does automatic reordering work?",
+    "description": "The Atelier monitors your bean hopper level and automatically reorders your preferred beans before you run out.",
+    "keywords": [
+      "auto reorder",
+      "bean delivery",
+      "automatic",
+      "supplies",
+      "convenience"
+    ],
+    "facts": [
+      "The machine monitors the bean hopper level continuously",
+      "Automatically reorders beans before you run out",
+      "Works through the MyAtelier service",
+      "Orders your preferred bean selection",
+      "Eliminates the need to track coffee supplies manually"
+    ],
+    "images": []
+  },
+  {
+    "id": "faq-trial-period",
+    "type": "faq",
+    "title": "Can I try The Atelier before committing?",
+    "description": "Yes, The Atelier includes a 30-night trial period with free returns if it's not right for you.",
+    "keywords": [
+      "trial",
+      "return",
+      "guarantee",
+      "try before buy",
+      "risk free"
+    ],
+    "facts": [
+      "30-night trial period included with purchase",
+      "Free returns if the machine isn't right for you",
+      "Full refund during trial period",
+      "Gives you time to experience the machine's learning capabilities",
+      "Also available to test at any of 1,200+ café locations"
+    ],
+    "images": []
+  },
+  {
+    "id": "testimonial-priya",
+    "type": "testimonial",
+    "title": "Priya M., London",
+    "description": "Customer testimonial about The Atelier's learning capabilities.",
+    "keywords": [
+      "testimonial",
+      "review",
+      "customer",
+      "atelier review"
+    ],
+    "facts": [
+      "\"It simply knew what I wanted, before I did. The first machine I've owned that got better the longer.\"",
+      "Customer: Priya M., London",
+      "Ownership: 3 months",
+      "Highlights the machine's predictive learning capabilities"
+    ],
+    "images": []
+  },
+  {
+    "id": "testimonial-daniel",
+    "type": "testimonial",
+    "title": "Daniel R., Bristol",
+    "description": "Customer testimonial about The Atelier's automatic reordering feature.",
+    "keywords": [
+      "testimonial",
+      "review",
+      "customer",
+      "atelier review",
+      "auto reorder"
+    ],
+    "facts": [
+      "\"I was sceptical at the price. Then it started reordering beans before I noticed, and warming up before.\"",
+      "Customer: Daniel R., Bristol",
+      "Ownership: 5 months",
+      "Highlights automatic reordering and predictive warming features"
+    ],
+    "images": []
+  },
+  {
+    "id": "testimonial-sana",
+    "type": "testimonial",
+    "title": "Sana K., Leeds",
+    "description": "Customer testimonial about The Atelier's multi-user profiles.",
+    "keywords": [
+      "testimonial",
+      "review",
+      "customer",
+      "atelier review",
+      "family"
+    ],
+    "facts": [
+      "\"Every person in our house gets their own cup, exactly right, without touching a single dial. Worth every.\"",
+      "Customer: Sana K., Leeds",
+      "Ownership: 2 months",
+      "Highlights multi-user profile capabilities for families"
+    ],
+    "images": []
+  }
+]
